@@ -1,0 +1,34 @@
+/*
+ * --- GLOBAL STYLES ---
+ */
+html, body{
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    /* makes sure that the padding and border are included in the total width and height of the elements. */
+    box-sizing: border-box;
+  
+    font-family: "Optima";
+  
+    background-color: #E0E5FF;
+  }
+  
+  .container{
+    position: relative;
+  
+    width: calc(100vh / 2304 * 4096);
+    height: 100vh;
+  
+    transform: translate(calc(100vh / 2304 * 4096 * -0.5 + 0.5 * 100vw), 0);
+
+    border: 1px solid red;
+   }
+  
+  .grid {
+    display: grid;
+    grid-gap: 1em;
+  }
+  
+  

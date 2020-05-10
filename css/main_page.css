@@ -1,0 +1,203 @@
+/*
+ * --- GLOBAL STYLES ---
+ */
+body,
+html {
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  /* makes sure that the padding and border are included in the total width and height of the elements. */
+  box-sizing: border-box;
+
+  font-family: "Optima";
+
+  background-color: black;
+  /* background-image: linear-gradient(black, rgb(61, 71, 127)); */
+
+}
+
+.container{
+  position: relative;
+
+  width: calc(100vh / 2304 * 4096);
+  height: 100vh;
+
+  transform: translate(0, -100vh);
+ }
+
+.grid {
+  display: grid;
+  grid-gap: 1em;
+}
+
+/* 
+ * --- BACKGROUND IMAGE STYLES ---
+ */
+ .bg{
+  height: 100%;
+
+  position: fixed;
+  left: calc(100vh / 2304 * 4096 * -0.5 + 0.5 * 100vw);
+  top: 0;
+
+}
+
+.bg_img{
+  width: calc(100vh / 2304 * 4096);
+  height: auto;
+}
+
+/* 
+ * --- SECTION STYLES ---
+ */
+
+.container .grid {
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6.25rem, 6.25rem, 6.25rem, 6.25rem;
+  grid-row-gap: 4.75rem;
+
+  padding: 15rem 8.75rem 0 8.75rem;
+
+  font-size: 1.5625rem;
+  /* font-size: calc(1rem + 0.3vw);
+  line-height: calc(1.1em + 0.5vw); */
+}
+
+div.oval {
+
+
+  width: 10rem;
+  height: 6.25rem;
+  /* width: calc(6rem + 3vw);
+  height: calc(4.5rem + 0.5vw); */
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+
+  border: 1px solid #f9df4b;
+
+  transform: rotate(-9deg);
+
+  /* center <a> tag */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-orange .oval {
+  border-color: #f59f1a;
+}
+
+div.oval a {
+  text-decoration: none;
+  text-align: center;
+  transform: rotate(9deg);
+}
+
+.button-yellow a {
+  color: #f9df4b;
+}
+
+.button-orange a {
+  color: #f59f1a;
+}
+
+.right-button {
+  justify-self: end;
+}
+
+/* 
+ * --- FOOTER STYLES ---
+ */
+.footer {
+  grid-template-columns: auto 1fr auto;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6.25rem;
+  border-left: 0;
+  border-top: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #f9744b;
+}
+
+.footer img{
+  height: 1vh;
+}
+
+/* --- iPhone X - width: 375px height: 812px */
+@media screen and (min-width: 375px) {
+}
+
+/* --- iPad - width: 768px height: 1024px --- */
+@media screen and (min-width: 768px) {
+  /* section.grid {
+    padding: 18rem 3.25rem 0 3.25rem;
+    grid-row-gap: 5rem;
+    font-size: 1.25rem;
+  }
+
+  div.oval {
+    width: 6.5rem;
+    height: 4.6875rem;
+  } */
+}
+
+/* --- iPad Pro - width: 1024px height: 1366px --- */
+@media screen and (min-width: 1024px) {
+  /* section.grid {
+    padding: 17rem 5rem 0 5rem;
+
+    font-size: 1.25rem;
+  }
+
+  div.oval {
+    width: 8rem;
+    height: 5rem;
+  } */
+}
+
+@media screen and (min-width: 1650px) {
+  /* --- BACKGROUND IMAGE STYLES ---*/
+  .bg{
+    /* position: fixed;
+    left: calc(100vh / 2304 * 4096 * -0.5 + 0.5 * 100vw);
+    top: 0; */
+    background-color: red;
+  }
+  
+  .bg_img{
+    width: calc(100vh / 2304 * 4096);
+    height: auto;
+  }
+
+  /* section.grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6.25rem, 6.25rem, 6.25rem, 6.25rem;
+
+    padding: 15rem 8.75rem 0 8.75rem;
+
+    grid-row-gap: 4.75rem;
+
+    font-size: 1.5625rem;
+  }
+
+  div.oval {
+    width: 10rem;
+    height: 6.25rem;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+
+    border: 1px solid #f9df4b;
+
+    transform: rotate(-9deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+}

@@ -1,0 +1,48 @@
+body,
+html {
+  height: 100%;
+}
+
+.bg {
+  height: 100%;
+
+  position: fixed;
+  left: calc(100vh / 2304 * 4096 * -0.5 + 0.5 * 100vw);
+  top: 0;
+
+  background-color: red;
+}
+
+.bg_img {
+  width: calc(100vh / 2304 * 4096);
+  height: auto;
+}
+
+.container {
+  position: relative;
+
+  width: calc(100vh / 2304 * 4096);
+  height: 100vh;
+
+  transform: translate(0, -100vh);
+}
+
+.grid{
+    display: grid;
+}
+
+div.grid{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid ul{
+    justify-self: start;
+    align-self: left;
+}
+
+h1 {
+
+  color: red;
+}
+
+
