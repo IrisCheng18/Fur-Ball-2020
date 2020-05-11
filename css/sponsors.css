@@ -37,7 +37,8 @@ body {
   padding-left: calc(140 / 1920 * 100vw);
   padding-right: calc(140 / 1920 * 100vw);
 
-  height: 12.6vh;
+  /* height: 12.6vh; */
+  height: calc(136 / 1080 * 100vh);
 
   font-family: "Playfair Display";
   /* border: 1px solid red; */
@@ -100,8 +101,12 @@ body {
   font-size: calc(16 / 1080 * 100vh);
 }
 
-.left-section.grid img{
+.left-section.grid a{
   grid-row: 2 / 3;
+  height: calc(189 / 1080 * 100vh);
+}
+
+.left-section.grid a img{
   height: calc(189 / 1080 * 100vh);
 }
 
@@ -117,7 +122,7 @@ body {
 /* --- MIDDLE - MIDDLE SECTION */
 .middle-section.grid{
   grid-column: 3 / 11;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr auto;
   
 }
 
@@ -127,7 +132,13 @@ body {
 }
 
 .middle-section.grid ul li{
-  align-self: center;
+  align-self: flex-start;
+}
+
+.middle-section.grid p{
+  justify-self: center;
+  font-size: calc(18/ 1080 * 100vh);
+  color: #00265B;
 }
 
 /* --- MIDDLE - LEFT SECTION */
