@@ -58,7 +58,7 @@ body {
 
   grid-template-rows: 1fr auto;
 
-  height: calc(879 / 1080 * 100vh);
+  height: calc(850 / 1080 * 100vh);
 }
 
 
