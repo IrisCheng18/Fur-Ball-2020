@@ -16,9 +16,13 @@ body {
   background-color: #c7fff4;
 }
 
+.container{
+  height: 100vh;
+}
+
 .grid {
   display: grid;
-  grid-gap: 1em;
+  /* grid-gap: 1em; */
 }
 
 .container.grid {
@@ -89,12 +93,8 @@ footer.grid {
 
   padding: 0.5rem 8.75rem 0 8.75rem;
 
-  /* position: fixed;
-  left: 0;
-  bottom: 0; */
+
   height: 6.25rem;
-  /* border-left: 0;
-  border-top: 0px; */
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #bcbec0;
 }

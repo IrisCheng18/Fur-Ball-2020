@@ -93,7 +93,7 @@ body {
 .date {
   grid-row: 2 / 3;
 
-  padding-bottom: calc(56 / 1080 * 100vh);
+  padding-bottom: calc(45 / 1080 * 100vh);
 
   justify-self: center;
   align-self: center;
