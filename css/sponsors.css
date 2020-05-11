@@ -82,7 +82,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding-left: calc(140 / 1920 * 100vw);
   padding-right: calc(140 / 1920 * 100vw);
-  grid-gap: 1em;
+  grid-gap: calc(10 / 1920 * 100vw);
   height: 100%;
 }
 
@@ -115,9 +115,20 @@ body {
 }
 
 /* --- MIDDLE - MIDDLE SECTION */
+.middle-section.grid{
+  grid-column: 3 / 11;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  
+}
 
+.middle-section.grid ul{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+}
 
-
+.middle-section.grid ul li{
+  align-self: center;
+}
 
 /* --- MIDDLE - LEFT SECTION */
 .middle.grid .right-section{
