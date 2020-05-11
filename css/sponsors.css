@@ -38,6 +38,7 @@ body {
 
   height: 12.6vh;
 
+  font-family: "Playfair Display";
   border: 1px solid red;
 }
 
@@ -46,6 +47,8 @@ body {
   justify-self: center;
   align-self: center;
   list-style: none;
+
+  grid-gap: 1rem;
 
   color: #00265b;
 }
@@ -79,7 +82,14 @@ body {
   grid-column: 1 /3;
   justify-self: start;
   align-self: center;
+
+  display: block;
 }
+
+.left-section img{
+  height: calc(190 / 1080 * 100vh);
+}
+
 
 /* --- MIDDLE - MIDDLE SECTION */
 
