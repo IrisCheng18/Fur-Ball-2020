@@ -47,7 +47,6 @@ body {
 
 .grid {
   display: grid;
-  /* grid-gap: 1em; */
 }
 
 .container.grid {
