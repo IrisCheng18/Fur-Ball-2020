@@ -78,8 +78,8 @@ body {
 }
 
 div.oval {
-  width: 10rem;
-  height: 6.25rem;
+  width: calc(162.5 / 1080 * 100vh);
+  height: calc(101 / 1080 * 100vh);
   background-color: rgba(255, 255, 255, 0);
   border-radius: 50%;
 
