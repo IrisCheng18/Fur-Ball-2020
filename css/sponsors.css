@@ -123,16 +123,22 @@ body {
 .middle-section.grid{
   grid-column: 3 / 11;
   grid-template-rows: 1fr 1fr 1fr 1fr auto;
-  
 }
 
 .middle-section.grid ul{
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: calc(16 / 1920 * 100vw);
+  padding-left: calc(16 / 1920 * 100vw);
+  padding-right: calc(16 / 1920 * 100vw);
   list-style: none;
 }
 
 .middle-section.grid ul li{
   align-self: flex-start;
+}
+
+.logo{
+  width: 75%;
 }
 
 .middle-section.grid p{
