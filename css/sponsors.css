@@ -89,12 +89,12 @@ footer.grid {
 
   padding: 0.5rem 8.75rem 0 8.75rem;
 
-  position: fixed;
+  /* position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 0; */
   height: 6.25rem;
-  border-left: 0;
-  border-top: 0px;
+  /* border-left: 0;
+  border-top: 0px; */
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #bcbec0;
 }

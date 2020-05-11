@@ -13,7 +13,8 @@ body {
 
   font-family: "Optima";
 
-  background-image: url("../images/background\ only.png");
+  background-image: url("../images/background.png");
+  /* background-image: url("../images/background\ only.png"); */
   /* background-image: linear-gradient(black, rgb(61, 71, 127)); */
 }
 
