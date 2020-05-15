@@ -200,53 +200,57 @@
 }
 
 .center-point .round-image{
-  height: calc(150 / 1920 * 100vw);
+  height: calc(140 / 1920 * 100vw);
 }
 
 /* cos(15deg)=0.966  sin(15deg)=0.259
 ** cos(40deg)=0.766 sin(40deg)=0.643
 ** cos(65deg)=0.423 sin(65deg)=0.906
+
+** cos(30deg)=0.866  sin(30deg)=0.5
+** cos(50deg)=0.643 sin(50deg)=0.766
+** cos(70deg)=0.342 sin(70deg)=0.94
 */
 .top-section.grid .image1{
   position: absolute;
-  top: calc((466 * 0.259 - 75) / 1920 * 100vw);
-  left: calc((-466 * 0.966 - 75) / 1920 * 100vw);
+  top: calc((466 * 0.5 - 70) / 1920 * 100vw);
+  left: calc((-466 * 0.866 - 70) / 1920 * 100vw);
 }
 
 .top-section.grid .image2{
   position: absolute;
-  top: calc((466 * 0.643 - 75)/ 1920 * 100vw);
-  left: calc((-466 * 0.766 - 75) / 1920 * 100vw);
+  top: calc((466 * 0.766 - 70)/ 1920 * 100vw);
+  left: calc((-466 * 0.643 - 70) / 1920 * 100vw);
 }
 
 .top-section.grid .image3{
   position: absolute;
-  top: calc((466 * 0.906 - 75)/ 1920 * 100vw);
-  left: calc((-466 * 0.423 - 75) / 1920 * 100vw);
+  top: calc((466 * 0.94 - 70)/ 1920 * 100vw);
+  left: calc((-466 * 0.342 - 70) / 1920 * 100vw);
 }
 
 .top-section.grid .image4{
   position: absolute;
-  top: calc((466 - 75)/ 1920 * 100vw);
-  left: calc((-75) / 1920 * 100vw);
+  top: calc((466 - 70)/ 1920 * 100vw);
+  left: calc((-70) / 1920 * 100vw);
 }
 
 .top-section.grid .image5{
   position: absolute;
-  top: calc((466 * 0.906 - 75)/ 1920 * 100vw);
-  left: calc((466 * 0.423 - 75) / 1920 * 100vw);
+  top: calc((466 * 0.94 - 70)/ 1920 * 100vw);
+  left: calc((466 * 0.342 - 70) / 1920 * 100vw);
 }
 
 .top-section.grid .image6{
   position: absolute;
-  top: calc((466 * 0.643 - 75)/ 1920 * 100vw);
-  left: calc((466 * 0.766 - 75) / 1920 * 100vw);
+  top: calc((466 * 0.766 - 70)/ 1920 * 100vw);
+  left: calc((466 * 0.643 - 70) / 1920 * 100vw);
 }
 
 .top-section.grid .image7{
   position: absolute;
-  top: calc((466 * 0.259 - 75) / 1920 * 100vw);
-  left: calc((466 * 0.966 - 75) / 1920 * 100vw);
+  top: calc((466 * 0.5 - 70) / 1920 * 100vw);
+  left: calc((466 * 0.866 - 70) / 1920 * 100vw);
 }
  
  /* --- MIDDLE - RIGHT SECTION */
