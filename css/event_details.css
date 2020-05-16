@@ -193,7 +193,7 @@ body {
   width: calc(200 / 1920 * 100vw);
   height: auto;
 
-  font-size: calc(22 / 1920 * 100vw);
+  font-size: calc(20 / 1920 * 100vw);
   /* font-size: 2.2em; */
   letter-spacing: 1px;
 
