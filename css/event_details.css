@@ -187,7 +187,7 @@ body {
   color: #fbff87;
 
   position: absolute;
-  left: 20%;
+  left: 21%;
   top: 30%;
 
   width: calc(180 / 1920 * 100vw);
@@ -267,8 +267,8 @@ body {
 
 .center-point .star1{
   position: absolute;
-  top: calc((466 * 0.5 + 23) / 1920 * 100vw);
-  left: calc((-466 * 0.866 - 75) / 1920 * 100vw);
+  top: calc((466 * 0.5 + 10) / 1920 * 100vw);
+  left: calc((-466 * 0.866 + 75) / 1920 * 100vw);
 }
 
 .center-point .image2 {
@@ -279,8 +279,8 @@ body {
 
 .center-point .star2 {
   position: absolute;
-  top: calc((466 * 0.766 - 20) / 1920 * 100vw);
-  left: calc((-466 * 0.643 + 55) / 1920 * 100vw);
+  top: calc((466 * 0.766 + 85) / 1920 * 100vw);
+  left: calc((-466 * 0.643 + 20) / 1920 * 100vw);
 }
 
 .center-point .image3 {
@@ -291,8 +291,8 @@ body {
 
 .center-point .star3 {
   position: absolute;
-  top: calc((466 * 0.94 + 50) / 1920 * 100vw);
-  left: calc((-466 * 0.342 - 45) / 1920 * 100vw);
+  top: calc((466 * 0.94 - 50) / 1920 * 100vw);
+  left: calc((-466 * 0.342 + 75) / 1920 * 100vw);
 }
 
 .center-point .image4 {
@@ -301,11 +301,11 @@ body {
   left: calc((-70) / 1920 * 100vw);
 }
 
-.center-point .star4 {
+/* .center-point .star4 {
   position: absolute;
   top: calc((466 + 55) / 1920 * 100vw);
   left: calc((-16) / 1920 * 100vw);
-}
+} */
 
 .center-point .image5 {
   position: absolute;
@@ -315,8 +315,8 @@ body {
 
 .center-point .star5 {
   position: absolute;
-  top: calc((466 * 0.94 + 45) / 1920 * 100vw);
-  left: calc((466 * 0.342 + 20) / 1920 * 100vw);
+  top: calc((466 * 0.94 + 65) / 1920 * 100vw);
+  left: calc((466 * 0.342 - 85) / 1920 * 100vw);
 }
 
 .center-point .image6 {
@@ -327,8 +327,8 @@ body {
 
 .center-point .star6 {
   position: absolute;
-  top: calc((466 * 0.766 - 40) / 1920 * 100vw);
-  left: calc((466 * 0.643 - 80) / 1920 * 100vw);
+  top: calc((466 * 0.766 - 30) / 1920 * 100vw);
+  left: calc((466 * 0.643 - 110) / 1920 * 100vw);
 }
 
 .center-point .image7 {
@@ -339,8 +339,8 @@ body {
 
 .center-point .star7 {
   position: absolute;
-  top: calc((466 * 0.5 + 10) / 1920 * 100vw);
-  left: calc((466 * 0.866 + 50) / 1920 * 100vw);
+  top: calc((466 * 0.5 + 80) / 1920 * 100vw);
+  left: calc((466 * 0.866 - 25) / 1920 * 100vw);
 }
 /* end of section1 */
 
@@ -394,7 +394,7 @@ body {
   justify-self: center;
   align-self: flex-start;
 
-  color: #F0BA3C;
+  color: #A8002E;
   font-size: calc(22 / 1920 * 100vw);
 
   transform: rotate(-15deg);
