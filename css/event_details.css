@@ -15,7 +15,9 @@
  
    background-color: #FFF8E0;
 
-   font-size: 62.5%;
+   /* so as to make 1em=10px */
+   /* font-size: 62.5%; */
+   line-height: 1.2;
  }
  
  .container{
@@ -36,6 +38,7 @@
   */
  .container .top.grid {
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
    padding-left: calc(140 / 1920 * 100vw);
    padding-right: calc(140 / 1920 * 100vw);
  
@@ -46,7 +49,8 @@
  }
  
  .top.grid ul {
-   grid-column: 3 / 11;
+   grid-column: 1 / 13;
+   grid-row: 1 / 2;
    justify-self: center;
    align-self: center;
    list-style: none;
@@ -58,6 +62,7 @@
  
  .top.grid a {
    grid-column: 12 /13;
+   grid-row: 1 / 2;
    justify-self: end;
    align-self: center;
    text-decoration: none;
@@ -68,15 +73,18 @@
  }
  
  .title {
-   /* font-size: calc(30 / 1080 * 100vh); */
-   font-size: 3em;
+   font-size: calc(30 / 1080 * 100vh);
+   /* font-size: 3em; */
    justify-self: center;
+   letter-spacing: 3px;
  }
  
  .subtitle {
-   /* font-size: calc(18 / 1080 * 100vh); */
-   font-size: 1.8em;
+   font-size: calc(20 / 1080 * 100vh);
+   /* font-size: 2em; */
+   font-family: 'Optima';
    justify-self: center;
+   letter-spacing: 1px;
  }
  
  /*
@@ -101,8 +109,8 @@
    height: 100%;
    grid-gap: calc(12 / 1080 * 100vh);
    font-family: 'Avenir Next Condensed';
-   /* font-size: calc(16 / 1080 * 100vh); */
-   font-size: 1.6em;
+   font-size: calc(16 / 1080 * 100vh);
+   /* font-size: 1.6em; */
  }
  
  .left-section.grid img{
@@ -130,7 +138,8 @@
 
  }
 
- .middle-section.grid .top-section.grid{
+ /* section1 */
+ .middle-section.grid .section1.grid{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: calc(150 / 1920 * 100vw) 1fr;
 
@@ -150,7 +159,6 @@
 
 .heart-top{
   display: inline-flex;
-  position: relative;
 }
 
 .semicircle-upper{
@@ -158,6 +166,8 @@
     height: calc(150 / 1920 * 100vw);
     border-radius: calc(150 / 1920 * 100vw) calc(150 / 1920 * 100vw) 0 0;
     background-color: #A8002E;
+
+    position: relative;
   }
 
 .heart .semicircle-lower{
@@ -165,26 +175,53 @@
   height: calc(300 / 1920 * 100vw);
   border-radius: 0 0 calc(300 / 1920 * 100vw) calc(300 / 1920 * 100vw);
   background-color: #A8002E;
+  /* background-color: #FFF8E0; */
 }
 
-.heart div p{
-  font-size: 2.2em;
+.heart-top div p{
   color: #FBFF87;
+
+  position: absolute;
+  left: 23%;
+  top: 30%;
+
+  width: calc(180 / 1920 * 100vw);
+  height: auto;
+
+  font-size: calc(20 / 1920 * 100vw);
+  /* font-size: 2.2em; */
+ 
+  z-index: 2;
 }
 
-.invite-text1{
-  position: absolute;
-  left: 10%;
-  top: 20%;
-
-  width: calc(194 / 1920 * 100vw);
-  height: auto;
+.heart-bottom.grid p{
+  color: #FBFF87;
+  font-size: calc(22 / 1920 * 100vw);
 
   z-index: 2;
 }
 
- /*--- end of heart ---*/
-.top-section.grid .center-point{
+.heart-bottom.grid{
+  grid-template-rows: 1fr;
+
+}
+
+.heart-bottom.grid .grid{
+  grid-row: 1 / 2;
+
+  grid-template-rows: 1fr auto auto auto;
+  height: 50%;
+
+  align-self: center;
+}
+
+.heart-bottom.grid .grid p{
+  justify-self: center;
+  align-self: center;
+}
+/*--- end of heart ---*/
+
+.section1.grid .center-point{
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 
@@ -211,47 +248,52 @@
 ** cos(50deg)=0.643 sin(50deg)=0.766
 ** cos(70deg)=0.342 sin(70deg)=0.94
 */
-.top-section.grid .image1{
+.section1.grid .image1{
   position: absolute;
   top: calc((466 * 0.5 - 70) / 1920 * 100vw);
   left: calc((-466 * 0.866 - 70) / 1920 * 100vw);
 }
 
-.top-section.grid .image2{
+.section1.grid .image2{
   position: absolute;
   top: calc((466 * 0.766 - 70)/ 1920 * 100vw);
   left: calc((-466 * 0.643 - 70) / 1920 * 100vw);
 }
 
-.top-section.grid .image3{
+.section1.grid .image3{
   position: absolute;
   top: calc((466 * 0.94 - 70)/ 1920 * 100vw);
   left: calc((-466 * 0.342 - 70) / 1920 * 100vw);
 }
 
-.top-section.grid .image4{
+.section1.grid .image4{
   position: absolute;
   top: calc((466 - 70)/ 1920 * 100vw);
   left: calc((-70) / 1920 * 100vw);
 }
 
-.top-section.grid .image5{
+.section1.grid .image5{
   position: absolute;
   top: calc((466 * 0.94 - 70)/ 1920 * 100vw);
   left: calc((466 * 0.342 - 70) / 1920 * 100vw);
 }
 
-.top-section.grid .image6{
+.section1.grid .image6{
   position: absolute;
   top: calc((466 * 0.766 - 70)/ 1920 * 100vw);
   left: calc((466 * 0.643 - 70) / 1920 * 100vw);
 }
 
-.top-section.grid .image7{
+.section1.grid .image7{
   position: absolute;
   top: calc((466 * 0.5 - 70) / 1920 * 100vw);
   left: calc((466 * 0.866 - 70) / 1920 * 100vw);
 }
+/* end of section1 */
+
+/* section2 */
+
+/* end of section2 */
  
  /* --- MIDDLE - RIGHT SECTION */
  .middle.grid .right-section{
@@ -265,8 +307,8 @@
    justify-self: end;
    align-self: flex-end;
  
-   /* font-size: calc(25 / 1080 * 100vh); */
-   font-size: 2.5em;
+   font-size: calc(25 / 1080 * 100vh);
+   /* font-size: 2.5em; */
    color: #00265B;
  }
  
@@ -305,8 +347,8 @@
    display: inline-block;
    padding-left: calc(24 / 1920 * 100vw);
  
-   /* font-size: calc(16 / 1920 * 100vw); */
-   font-size: 1.6em;
+   font-size: calc(16 / 1920 * 100vw);
+   /* font-size: 1.6em; */
    color: #00265b;
  }
  
@@ -320,8 +362,8 @@
    display: inline-block;
    padding-left: calc(47 / 1920 * 100vw);
  
-   /* font-size: calc(30 / 1920 * 100vw); */
-   font-size: 3em;
+   font-size: calc(30 / 1920 * 100vw);
+   /* font-size: 3em; */
  }
  
  .fa-facebook-square {
