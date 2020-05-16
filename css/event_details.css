@@ -190,7 +190,7 @@ body {
   left: 20%;
   top: 30%;
 
-  width: calc(200 / 1920 * 100vw);
+  width: calc(180 / 1920 * 100vw);
   height: auto;
 
   font-size: calc(20 / 1920 * 100vw);
@@ -247,7 +247,7 @@ body {
 }
 
 .center-point .fa-star{
-  color: #F0BA3C;
+  color: #a8002e;
   font-size: calc(22 / 1920 * 100vw);
 
   transform: rotate(-15deg);
