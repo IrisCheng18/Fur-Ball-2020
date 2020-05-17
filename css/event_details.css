@@ -253,7 +253,7 @@ body {
 }
 
 .center-point .round-image {
-  height: calc(140 / 1920 * 100vw);
+  height: calc(130 / 1920 * 100vw);
 }
 
 .center-point .fa-star {
@@ -277,8 +277,8 @@ body {
 
 .center-point .star1 {
   position: absolute;
-  top: calc((466 * 0.5 + 10) / 1920 * 100vw);
-  left: calc((-466 * 0.866 + 75) / 1920 * 100vw);
+  top: calc((466 * 0.5 + 50) / 1920 * 100vw);
+  left: calc((-466 * 0.866 + 30) / 1920 * 100vw);
 }
 
 .center-point .image2 {
@@ -289,8 +289,8 @@ body {
 
 .center-point .star2 {
   position: absolute;
-  top: calc((466 * 0.766 + 85) / 1920 * 100vw);
-  left: calc((-466 * 0.643 + 20) / 1920 * 100vw);
+  top: calc((466 * 0.766 + 33) / 1920 * 100vw);
+  left: calc((-466 * 0.643 + 45) / 1920 * 100vw);
 }
 
 .center-point .image3 {
@@ -301,8 +301,8 @@ body {
 
 .center-point .star3 {
   position: absolute;
-  top: calc((466 * 0.94 - 50) / 1920 * 100vw);
-  left: calc((-466 * 0.342 + 75) / 1920 * 100vw);
+  top: calc((466 * 0.94 + 15) / 1920 * 100vw);
+  left: calc((-466 * 0.342 + 60) / 1920 * 100vw);
 }
 
 .center-point .image4 {
@@ -325,8 +325,8 @@ body {
 
 .center-point .star5 {
   position: absolute;
-  top: calc((466 * 0.94 + 65) / 1920 * 100vw);
-  left: calc((466 * 0.342 - 85) / 1920 * 100vw);
+  top: calc((466 * 0.94 + 10) / 1920 * 100vw);
+  left: calc((466 * 0.342 - 95) / 1920 * 100vw);
 }
 
 .center-point .image6 {
@@ -337,8 +337,8 @@ body {
 
 .center-point .star6 {
   position: absolute;
-  top: calc((466 * 0.766 - 30) / 1920 * 100vw);
-  left: calc((466 * 0.643 - 110) / 1920 * 100vw);
+  top: calc((466 * 0.766 + 30) / 1920 * 100vw);
+  left: calc((466 * 0.643 - 85) / 1920 * 100vw);
 }
 
 .center-point .image7 {
@@ -349,8 +349,8 @@ body {
 
 .center-point .star7 {
   position: absolute;
-  top: calc((466 * 0.5 + 80) / 1920 * 100vw);
-  left: calc((466 * 0.866 - 25) / 1920 * 100vw);
+  top: calc((466 * 0.5 + 50) / 1920 * 100vw);
+  left: calc((466 * 0.866 - 65) / 1920 * 100vw);
 }
 /* end of section1 */
 
