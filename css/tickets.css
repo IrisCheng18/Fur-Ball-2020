@@ -146,11 +146,7 @@ body {
 /* --- MIDDLE - MIDDLE SECTION */
 .middle.grid .middle-section.grid {
   grid-column: 3 / 11;
-
-
 }
-
-
 
 .middle-section.grid .outer_circle {
   grid-template-rows: 1fr 1fr;
@@ -165,9 +161,17 @@ body {
 
 }
 
-.middle-section.grid .outer_circle .left_half_circle {
-grid-row: 1 / 3;
-grid-column: 1 / 2;
+.middle-section.grid .outer_circle.grid .left_section.grid {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+
+  width: calc(320 / 1920 * 100vw);
+  height: calc(640 / 1920 * 100vw);
+}
+
+.outer_circle .left_section.grid .left_half_circle {
+  justify-self: end;
+  align-self: center;
 
   width: calc(160 / 1920 * 100vw);
   height: calc(320 / 1920 * 100vw);
@@ -178,7 +182,7 @@ grid-column: 1 / 2;
   color: #00265B;
   font-size: calc(22 / 1920 * 100vw);
 
-  margin: 50% 0 0 50%;
+  /* margin: 50% 0 0 50%; */
 
   display: flex;
   justify-content: center;
@@ -189,9 +193,17 @@ grid-column: 1 / 2;
   text-align: center;
 }
 
-.middle-section.grid .outer_circle .right_half_circle {
+.middle-section.grid .outer_circle.grid .right_section.grid {
   grid-row: 1 / 3;
   grid-column: 2 / 3;
+
+  width: calc(320 / 1920 * 100vw);
+  height: calc(640 / 1920 * 100vw);
+}
+
+.outer_circle.grid .right_section.grid .right_half_circle {
+  justify-self: start;
+  align-self: center;
 
   width: calc(160 / 1920 * 100vw);
   height: calc(320 / 1920 * 100vw);
@@ -202,7 +214,7 @@ grid-column: 1 / 2;
   color: #F1DF78;
   font-size: calc(22 / 1920 * 100vw);
 
-  margin: 50% 0 0 0;
+  /* margin: 50% 0 0 0; */
 
   display: flex;
   justify-content: center;
@@ -217,8 +229,8 @@ grid-column: 1 / 2;
   grid-row: 2 / 3;
   grid-column: 2 / 3;
 
-  width: 320px;
-  height: 320px;
+  width: calc(320 / 1920 * 100vw);
+  height: calc(320 / 1920 * 100vw);
 
   position: relative;
 }
