@@ -357,7 +357,7 @@ body {
 .middle-section .section2.grid {
   grid-row: 2 / 3;
 
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
 
   /* border: 2px solid #A8002E; */
   letter-spacing: calc(1 / 1920 * 100vw);
@@ -365,20 +365,31 @@ body {
 
 .middle-section .section2.grid p,
 .middle-section .section2.grid div {
-  font-size: calc(30 / 1920 * 100vw);
+  font-size: calc(26 / 1920 * 100vw);
   color: #00265b;
+}
+
+.middle-section.grid .section2.grid .name{
+  margin-top: calc(60 / 1920 * 100vw);
+  margin-bottom: calc(30 / 1920 * 100vw);
+  justify-self: center;
+
+  font-family: "EB Garamond", serif;
+  font-size: calc(40 / 1920 * 100vw);
+  font-weight: 600;
+  color: #a8002e;
 }
 
 .middle-section.grid .section2.grid .date {
   justify-self: center;
-  margin-top: calc(60 / 1920 * 100vw);
+
   /* color: #A8002E; */
 }
 
 .section2.grid .address.grid {
   justify-self: center;
-  margin-top: calc(40 / 1920 * 100vw);
-  margin-bottom: calc(50 / 1920 * 100vw);
+  margin-top: calc(30 / 1920 * 100vw);
+  margin-bottom: calc(40 / 1920 * 100vw);
 }
 
 .section2.grid .address.grid a {
@@ -386,7 +397,7 @@ body {
   margin-top: calc(10 / 1920 * 100vw);
 
   text-decoration: none;
-  color: #a8002e;
+  color: #00265B;
 }
 
 .section2.grid .info.grid {
@@ -406,7 +417,7 @@ body {
   align-self: flex-start;
 
   color: #a8002e;
-  font-size: calc(22 / 1920 * 100vw);
+  font-size: calc(20 / 1920 * 100vw);
 
   transform: rotate(-15deg);
 }
@@ -415,7 +426,7 @@ body {
   grid-row: 1 / 2;
   grid-column: 2 / 3;
   justify-self: start;
-  font-size: calc(26 / 1920 * 100vw);
+  font-size: calc(24 / 1920 * 100vw);
 }
 
 .info.grid .grid {
@@ -451,7 +462,8 @@ body {
 .right-section .menu.grid {
   grid-template-rows: repeat(8, auto);
   grid-gap: calc(8 / 1920 * 100vw);
-  align-self: center;
+
+  justify-items: end;
 
   position: sticky;
   top: calc(16 / 1080 * 100vh);
@@ -487,9 +499,8 @@ body {
   grid-gap: calc(24 / 1080 * 100vh);
 }
 
-.right-section p {
-  justify-self: end;
-  align-self: flex-end;
+.right-section .name_image p {
+  text-align: center;
 
   font-size: calc(25 / 1080 * 100vh);
   letter-spacing: calc(1 / 1920 * 100vw);
