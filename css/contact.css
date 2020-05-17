@@ -67,6 +67,7 @@
    justify-self: end;
    align-self: center;
    text-decoration: none;
+   color: #00265b;
  }
  
  .top.grid a p {
@@ -172,13 +173,14 @@
   width: calc(130 / 1920 * 100vw);
   height: calc(40 / 1920 * 100vw);
   border-radius: calc(20 / 1920 * 100vw);
-  border: 1px solid #0a2457;
+  border: 1px solid #00265b;
 
   font-size: calc(18 / 1920 * 100vw);
 }
 
 .right-section .menu.grid a{
   text-decoration: none;
+  color: #00265b;
 }
 
 .menu.grid .contact p{

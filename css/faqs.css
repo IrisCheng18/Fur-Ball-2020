@@ -67,6 +67,7 @@
    justify-self: end;
    align-self: center;
    text-decoration: none;
+   color: #00265b;
  }
  
  .top.grid a p {
@@ -179,6 +180,7 @@
 
 .right-section .menu.grid a{
   text-decoration: none;
+  color: #00265b;
 }
 
 .menu.grid .faqs p{
