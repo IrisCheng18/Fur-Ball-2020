@@ -190,7 +190,7 @@ body {
   margin-bottom: calc(10 / 1080 * 100vh);
   font-size: calc(20 / 1080 * 100vh);
   /* font-style: italic; */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: bold;
   /* text-decoration: underline; */
 }
@@ -199,7 +199,7 @@ body {
   margin-bottom: calc(10 / 1080 * 100vh);
   font-size: calc(20 / 1080 * 100vh);
   /* font-style: italic; */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: bold;
 }
 
