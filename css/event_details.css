@@ -549,6 +549,8 @@ footer.grid {
 
   height: calc(100 / 1080 * 100vh);
   border: 1px solid #bcbec0;
+
+  z-index: 2;
 }
 
 footer img {

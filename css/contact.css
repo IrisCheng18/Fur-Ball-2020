@@ -250,7 +250,6 @@ body {
   border: 1px solid #bcbec0;
 }
 
-
 .middle.grid .right-section .name_image {
   position: sticky;
   top: calc(845 / 1080 * 100vh);
@@ -284,6 +283,8 @@ footer.grid {
 
   height: calc(100 / 1080 * 100vh);
   border: 1px solid #bcbec0;
+
+  z-index: 2;
 }
 
 footer img {
