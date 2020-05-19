@@ -128,7 +128,7 @@
     font-size: calc(16 / 1080 * 100vh);
     /* font-size: 1.6em; */
     letter-spacing: 1px;
-  }
+   }
   
   .left-section.grid a{
     grid-row: 2 / 3;
@@ -153,6 +153,8 @@
    grid-template-rows: repeat(5, auto);
 
    grid-gap: calc(16 / 1080 * 100vh);
+
+   color: #00265b;
  }
  
  .middle-section.grid .section .section-title{

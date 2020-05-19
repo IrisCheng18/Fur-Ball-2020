@@ -191,7 +191,7 @@ body {
   font-size: calc(20 / 1080 * 100vh);
   /* font-style: italic; */
   text-transform: uppercase;
-  /* font-weight: bold; */
+  font-weight: bold;
   /* text-decoration: underline; */
 }
 
@@ -200,7 +200,7 @@ body {
   font-size: calc(20 / 1080 * 100vh);
   /* font-style: italic; */
   text-transform: uppercase;
-  /* font-weight: bold; */
+  font-weight: bold;
 }
 
 .section.grid div p {
