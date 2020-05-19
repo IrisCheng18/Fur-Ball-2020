@@ -148,10 +148,28 @@
   }
  
 /* --- MIDDLE - MIDDLE SECTION */
+ .middle.grid .middle-section.grid {
+   grid-column: 3 / 11;
+   grid-template-rows: repeat(5, auto);
+
+   grid-gap: calc(16 / 1080 * 100vh);
+ }
  
+ .middle-section.grid .section .section-title{
+  font-size: calc(24 / 1080 * 100vh);
+  font-weight: bold;
+
+  margin-bottom: calc(30 / 1080 * 100vh);
+ }
  
- 
- 
+ .middle-section.grid .section .section-text p{
+  font-size: calc(20 / 1080 * 100vh);
+  line-height: 1.4;
+  letter-spacing: calc(1 / 1080 * 100vh);
+
+  margin-bottom: calc(20 / 1080 * 100vh);
+ }
+
 /* --- MIDDLE - RIGHT SECTION */
 .middle.grid .right-section {
   grid-column: 11 / 13;

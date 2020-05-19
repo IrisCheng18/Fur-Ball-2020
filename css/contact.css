@@ -155,12 +155,15 @@ body {
   margin-left: calc(80 / 1080 * 100vh);
 
   color: #0a2457;
+
+  letter-spacing: calc(1 / 1080 * 100vh);
 }
 
 .middle-section.grid .row .section-title {
   margin-bottom: calc(30 / 1080 * 100vh);
 
-  font-size: calc(28 / 1080 * 100vh);
+  font-size: calc(24 / 1080 * 100vh);
+  /* font-weight: bold; */
 }
 
 .row .section.grid {
@@ -176,13 +179,28 @@ body {
 
 .row .section.grid .column.grid{
   grid-template-rows: 1fr auto;
-  margin-right: calc(10 / 1080 * 100vh);
+  margin-right: calc(20 / 1080 * 100vh);
+}
 
+.row .section.grid .col{
+  margin-right: calc(20 / 1080 * 100vh);
 }
 
 .section.grid div p.column-title {
   margin-bottom: calc(10 / 1080 * 100vh);
-  font-weight: bold;
+  font-size: calc(20 / 1080 * 100vh);
+  /* font-style: italic; */
+  text-transform: uppercase;
+  /* font-weight: bold; */
+  /* text-decoration: underline; */
+}
+
+.section.grid div div.column-title {
+  margin-bottom: calc(10 / 1080 * 100vh);
+  font-size: calc(20 / 1080 * 100vh);
+  /* font-style: italic; */
+  text-transform: uppercase;
+  /* font-weight: bold; */
 }
 
 .section.grid div p {
@@ -200,6 +218,38 @@ body {
 .row .section.grid .text-email:hover {
   font-weight: bold;
 }
+
+.name {
+  margin-top: calc(10 / 1080 * 100vh);
+  margin-bottom: calc(10 / 1080 * 100vh);
+  /* font-style: italic; */
+
+  font-size: calc(20 / 1080 * 100vh);
+}
+
+.address.grid{
+  margin-top: calc(15 / 1080 * 100vh);
+  margin-bottom: calc(10 / 1080 * 100vh);
+  
+  grid-template-columns: auto 1fr;
+  grid-gap: calc(10 / 1080 * 100vh);
+
+  font-size: calc(20 / 1080 * 100vh);
+}
+
+.email {
+  display: inline-flex;
+  /* margin-top: calc(10 / 1080 * 100vh); */
+}
+
+.email i, .phone i {
+  margin-right: calc(10 / 1080 * 100vh);
+}
+
+.phone{
+  margin-top: calc(6 / 1080 * 100vh);
+}
+
 
 /* --- MIDDLE - RIGHT SECTION */
 .middle.grid .right-section {
