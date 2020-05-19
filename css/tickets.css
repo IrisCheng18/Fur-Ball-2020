@@ -81,7 +81,8 @@ body {
   border-radius: 50%;
   border: 1px solid #00265b;
 
-  font-size: calc(20 / 1920 * 100vw);
+  font-family: "Optima", sans-serif;
+  font-size: calc(16 / 1920 * 100vw);
 }
 
 .title {

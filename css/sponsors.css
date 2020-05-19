@@ -11,7 +11,7 @@
    /* makes sure that the padding and border are included in the total width and height of the elements. */
    box-sizing: border-box;
  
-   font-family: "Optima";
+   font-family: "Optima", sans-serif;
    /* font-family: 'Cormorant Garamond', serif; */
  
    background-color: #C7FFF4;
@@ -31,7 +31,7 @@
  
  .container.grid {
    grid-template-rows: auto 1fr auto;
-   grid-gap: calc(36 / 1920 * 100vw);
+   grid-gap: calc(10 / 1920 * 100vw);
  }
  
  /*
@@ -75,20 +75,21 @@
    justify-content: center;
    align-items: center;
  
-   width: calc(60 / 1920 * 100vw);
-   height: calc(60 / 1920 * 100vw);
+   width: calc(50 / 1920 * 100vw);
+   height: calc(50 / 1920 * 100vw);
  
    border-radius: 50%;
    border: 1px solid #00265b;
  
-   font-size: calc(20 / 1920 * 100vw);
+   font-family: "Optima", sans-serif;
+   font-size: calc(16 / 1920 * 100vw);
  }
  
  .title {
    font-size: calc(36 / 1080 * 100vh);
    /* font-size: 3em; */
    justify-self: center;
-   letter-spacing: 1px;
+   letter-spacing: calc(1 / 1920 * 100vw);
  }
  
  .subtitle {
@@ -96,7 +97,7 @@
    /* font-size: 2em; */
    /* font-family: "Optima"; */
    justify-self: center;
-   letter-spacing: 1px;
+   letter-spacing: calc(1 / 1920 * 100vw);
  }
  
 /*
@@ -126,11 +127,14 @@
     font-family: "Open Sans Condensed";
     font-size: calc(16 / 1080 * 100vh);
     /* font-size: 1.6em; */
-    letter-spacing: 1px;
+    letter-spacing: calc(1 / 1920 * 100vw);
   }
   
-  .left-section.grid img {
+  .left-section.grid a{
     grid-row: 2 / 3;
+  }
+  
+  .left-section.grid a img{
     height: calc(189 / 1080 * 100vh);
   }
   
@@ -146,29 +150,56 @@
 /* --- MIDDLE - MIDDLE SECTION */
 .middle-section.grid{
   grid-column: 3 / 11;
-  grid-template-rows: 1fr 1fr 1fr 1fr auto;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr auto;
+
+  letter-spacing: calc(1 / 1920 * 100vw);
+  line-height: 1.5;
 }
 
 .middle-section.grid ul{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: calc(16 / 1920 * 100vw);
-  padding-left: calc(16 / 1920 * 100vw);
-  padding-right: calc(16 / 1920 * 100vw);
+  padding: calc(16 / 1920 * 100vw);
+  align-self: center;
+
+  height: calc(80 / 1920 * 100vw);
   list-style: none;
 }
 
 .middle-section.grid ul li{
-  align-self: flex-start;
+  justify-self: center;
+  align-self: center;
 }
 
 .logo{
-  width: 75%;
+  width: 65%;
 }
 
 .middle-section.grid p{
-  justify-self: center;
-  font-size: calc(18/ 1080 * 100vh);
+  font-size: calc(20/ 1080 * 100vh);
   color: #00265B;
+}
+
+.middle-section.grid p a{
+  text-decoration: none;
+  color:  #00265B;
+}
+
+.middle-section.grid p.text_top{
+  margin-bottom: calc(16 / 1080 * 100vh);
+}
+
+.middle-section.grid p.text-bottom{
+  margin-top: calc(16 / 1920 * 100vw);
+}
+
+.middle-section.grid p.text-bottom .fa-heart{
+  color: #A8002E;
+}
+
+.middle-section.grid p.text-bottom .text-tickets:hover,
+.middle-section.grid p.text-bottom .text-mailto:hover {
+  font-weight: bold;
 }
 
 /* --- MIDDLE - RIGHT SECTION */
@@ -206,9 +237,23 @@
   color: #00265b;
 }
 
+.right-section .menu.grid p:hover {
+  font-weight: bold;
+  border-radius: calc(15 / 1920 * 100vw);
+  border: 2px solid #00265b;
+}
+
 .menu.grid .sponsors p{
   border-color: #BCBEC0;
   color: #BCBEC0;
+}
+
+.menu.grid .sponsors p:hover {
+  cursor: not-allowed;
+  font-weight: normal;
+  border-color: #bcbec0;
+  border-radius: calc(15 / 1920 * 100vw);
+  border: 1px solid #bcbec0;
 }
 
 .middle.grid .right-section .name_image {
@@ -241,6 +286,7 @@ footer.grid {
   padding-top: calc(8 / 1080 * 100vh);
   padding-left: calc(140 / 1920 * 100vw);
   padding-right: calc(140 / 1920 * 100vw);
+  margin-top: calc(36 / 1920 * 100vw);
 
   height: calc(100 / 1080 * 100vh);
   border: 1px solid #bcbec0;
@@ -264,6 +310,16 @@ footer .info li {
   font-size: calc(16 / 1920 * 100vw);
   /* font-size: 1.6em; */
   color: #00265b;
+}
+
+footer .info li a{
+  text-decoration: none;
+  color: #00265b;
+}
+
+footer .info li a:hover{
+  text-decoration: none;
+  font-weight: bold;
 }
 
 footer #social-links {

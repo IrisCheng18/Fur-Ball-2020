@@ -81,7 +81,8 @@
    border-radius: 50%;
    border: 1px solid #0A2457;
  
-   font-size: calc(20 / 1920 * 100vw);
+   font-family: "Optima", sans-serif;
+   font-size: calc(16 / 1920 * 100vw);
  }
  
  .title {
@@ -218,6 +219,7 @@ footer.grid {
   padding-top: calc(8 / 1080 * 100vh);
   padding-left: calc(140 / 1920 * 100vw);
   padding-right: calc(140 / 1920 * 100vw);
+  margin-top: calc(30 / 1920 * 100vw);
 
   height: calc(100 / 1080 * 100vh);
   border: 1px solid #bcbec0;
