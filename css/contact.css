@@ -196,7 +196,7 @@ body {
 }
 
 .section.grid div div.column-title {
-  margin-bottom: calc(10 / 1080 * 100vh);
+  margin-bottom: calc(20 / 1080 * 100vh);
   font-size: calc(20 / 1080 * 100vh);
   /* font-style: italic; */
   /* text-transform: uppercase; */
