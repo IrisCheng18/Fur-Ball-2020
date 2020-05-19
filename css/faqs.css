@@ -31,7 +31,7 @@
  
  .container.grid {
    grid-template-rows: auto 1fr auto;
-   grid-gap: calc(36 / 1920 * 100vw);
+   grid-gap: calc(10 / 1920 * 100vw);
  }
  
  /*
@@ -236,7 +236,7 @@ footer.grid {
   padding-top: calc(8 / 1080 * 100vh);
   padding-left: calc(140 / 1920 * 100vw);
   padding-right: calc(140 / 1920 * 100vw);
-  margin-top: calc(30 / 1920 * 100vw);
+  margin-top: calc(36 / 1920 * 100vw);
 
   height: calc(100 / 1080 * 100vh);
   border: 1px solid #bcbec0;

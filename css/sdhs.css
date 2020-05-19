@@ -31,7 +31,7 @@
  
  .container.grid {
    grid-template-rows: auto 1fr auto;
-   grid-gap: calc(36 / 1920 * 100vw);
+   grid-gap: calc(10 / 1920 * 100vw);
  }
  
  /*
