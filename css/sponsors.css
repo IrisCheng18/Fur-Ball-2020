@@ -172,12 +172,13 @@
 }
 
 .logo{
-  width: 65%;
+  width: 70%;
 }
 
 .middle-section.grid p{
-  font-size: calc(20/ 1080 * 100vh);
+  font-size: calc(22/ 1080 * 100vh);
   color: #00265B;
+  /* color: black; */
 }
 
 .middle-section.grid p a{
