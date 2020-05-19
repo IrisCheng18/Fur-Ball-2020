@@ -14,7 +14,8 @@ body {
   font-family: "Optima";
   /* font-family: 'Cormorant Garamond', serif; */
 
-  background-color: #e0e5ff;
+  /* background-color: #e0e5ff; */
+  background-color: #FFFBEF;
 
   /* so as to make 1em=10px */
   /* font-size: 62.5%; */
@@ -153,6 +154,7 @@ body {
   grid-template-rows: repeat(5, auto);
 
   color: #00265b;
+  /* color: black; */
 }
 
 .middle-section.grid .section {
