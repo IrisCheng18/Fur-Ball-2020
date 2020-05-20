@@ -13,27 +13,14 @@ body {
 
   font-family: "Optima";
 
-  /* background-color: black; */
+  background-color: black;
   /* background-image: linear-gradient(black, rgb(61, 71, 127)); */
-
-    /* The image used */
-    background-image: url('../images/main_background.png');
-
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 
 /* 
  * --- BACKGROUND IMAGE STYLES ---
  */
- /* method 1 */
-/* .bg {
+.bg {
   height: 100%;
 
   position: fixed;
@@ -44,36 +31,18 @@ body {
 .bg_img {
   width: calc(100vh / 2304 * 4096);
   height: auto;
-} */
-
-/* method 2 */
-.bg_img_logo {
-  height: calc(739 / 1080 * 100vh);
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: calc(97 / 1080 * 100vh);
-
-  
 }
-
 
 /* 
  * --- CONTAINER STYLES ---
  */
- /* method 1 */
-/* .container {
+.container {
   position: relative;
 
   width: calc(100vh / 2304 * 4096);
   height: 100vh;
 
   transform: translate(0, -100vh);
-} */
-
-.container {
-  height: 100vh;
 }
 
 .grid {
@@ -81,14 +50,12 @@ body {
 }
 
 .container.grid {
-  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr auto;
   grid-gap: 1em;
 }
 
 .container .top.grid {
-  grid-column: 1 / 13;
-  grid-row: 1 / 2;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding-left: calc(140 / 1920 * 100vw);
   padding-right: calc(140 / 1920 * 100vw);
 
@@ -98,14 +65,8 @@ body {
 /* 
  * --- CONTAINER - LEFT-SECTION STYLES ---
  */
-.container.grid .bg_img_logo{
-  grid-column: 1 / 13;
-  grid-row: 1 / 3;
-}
-
-.container.grid .left-section.grid {
+.container .left-section.grid {
   grid-column: 1 / 4;
-  grid-row: 1 / 2;
 
   justify-self: start;
 
@@ -121,7 +82,6 @@ body {
  */
 .container .middle-section.grid {
   grid-column: 4 / 10;
-  grid-row: 1 / 2;
 
   grid-template-rows: 1fr auto;
   justify-self: center;
@@ -148,7 +108,6 @@ body {
  */
 .container .right-section.grid {
   grid-column: 11 / 13;
-  grid-row: 1 / 2;
 
   justify-self: end;
 
@@ -196,9 +155,8 @@ div.oval a {
 /* 
  * --- FOOTER STYLES ---
  */
-.container.grid footer.grid {
-  grid-column: 1 / 13;
-  grid-row: 2 / 3;
+.container footer.grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
   padding-top: calc(8 / 1080 * 100vh);
   padding-left: calc(140 / 1920 * 100vw);
