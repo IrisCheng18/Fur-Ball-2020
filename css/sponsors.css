@@ -154,7 +154,7 @@
   grid-template-rows: auto 1fr 1fr 1fr 1fr auto;
 
   letter-spacing: calc(1 / 1920 * 100vw);
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .middle-section.grid ul{
@@ -173,7 +173,7 @@
 }
 
 .logo{
-  width: 70%;
+  width: 75%;
 }
 
 .middle-section.grid p{

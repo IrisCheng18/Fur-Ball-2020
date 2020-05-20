@@ -38,7 +38,7 @@
    * --- TOP SECTION STYLES ---
    */
  .container .top.grid {
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns: repeat(12, 1fr);
    grid-template-rows: 1fr;
    padding-left: calc(140 / 1920 * 100vw);
    padding-right: calc(140 / 1920 * 100vw);
@@ -103,7 +103,7 @@
   * --- MIDDLE SECTION STYLES ---
   */
   .container .middle.grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
     padding-left: calc(140 / 1920 * 100vw);
     padding-right: calc(140 / 1920 * 100vw);
     grid-gap: 1em;
@@ -230,7 +230,7 @@
   * --- FOOTER SECTION STYLES ---
   */
 footer.grid {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
 
   padding-top: calc(8 / 1080 * 100vh);
   padding-left: calc(140 / 1920 * 100vw);

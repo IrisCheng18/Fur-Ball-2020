@@ -16,23 +16,22 @@ body {
   /* background-color: black; */
   /* background-image: linear-gradient(black, rgb(61, 71, 127)); */
 
-    /* The image used */
-    background-image: url('../images/main_background.png');
+  /* The image used */
+  background-image: url("../images/main_background.png");
 
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Full height */
+  height: 100%;
 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* 
  * --- BACKGROUND IMAGE STYLES ---
  */
- /* method 1 */
+/* method 1 */
 /* .bg {
   height: 100%;
 
@@ -46,23 +45,10 @@ body {
   height: auto;
 } */
 
-/* method 2 */
-.bg_img_logo {
-  height: calc(739 / 1080 * 100vh);
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: calc(97 / 1080 * 100vh);
-
-  
-}
-
-
 /* 
  * --- CONTAINER STYLES ---
  */
- /* method 1 */
+/* method 1 */
 /* .container {
   position: relative;
 
@@ -96,12 +82,61 @@ body {
 }
 
 /* 
- * --- CONTAINER - LEFT-SECTION STYLES ---
- */
-.container.grid .bg_img_logo{
+** --- method 2 -logo & title ---
+*/
+.container.grid .title.grid {
   grid-column: 1 / 13;
   grid-row: 1 / 3;
+
+  grid-template-columns: auto auto 1fr auto;
+  grid-template-rows: auto 1fr;
+  justify-self: center;
+
+  margin-bottom: calc(995 / 1080 * 100vh);
+  margin-left: calc(740 / 1920 * 100vw);
+  margin-right: calc(758 / 1920 * 100vw);
+
+  font-family: "Playfair Display", serif;
+  color: #f5df66;
+
+  display: flex;
+  align-items: flex-end;
 }
+
+.title.grid .text-34 {
+  font-size: calc(30 / 1080 * 100vh);
+}
+
+.title.grid .text-annual {
+  font-size: calc(17 / 1080 * 100vh);
+}
+
+.title.grid .text-fur-ball {
+  font-size: calc(33 / 1080 * 100vh);
+
+  margin-left: calc(43 / 1080 * 100vh);
+  margin-right: calc(57 / 1080 * 100vh);
+}
+
+.title.grid .text-2020 {
+  font-size: calc(33 / 1080 * 100vh);
+}
+
+.container.grid .bg_img_logo {
+  grid-column: 1 / 13;
+  grid-row: 1 / 3;
+
+  height: calc(739 / 1080 * 100vh);
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: calc(97 / 1080 * 100vh);
+}
+
+/* 
+ * --- CONTAINER - LEFT-SECTION STYLES ---
+ */
 
 .container.grid .left-section.grid {
   grid-column: 1 / 4;
@@ -111,10 +146,6 @@ body {
 
   padding-top: calc(235 / 1080 * 100vh);
 }
-
-/* .left-section.grid .left_button{
-  align-self: center;
-} */
 
 /* 
  * --- CONTAINER - MIDDLE-SECTION STYLES ---
@@ -139,7 +170,7 @@ body {
   align-self: center;
   /* align-self: flex-end; */
 
-  font-size: calc(21 / 1920 *100vw);
+  font-size: calc(21 / 1920 * 100vw);
   color: #f5df66;
 }
 
@@ -200,6 +231,8 @@ div.oval a {
   grid-column: 1 / 13;
   grid-row: 2 / 3;
 
+  grid-template-columns: repeat(12, 1fr);
+
   padding-top: calc(8 / 1080 * 100vh);
   padding-left: calc(140 / 1920 * 100vw);
   padding-right: calc(140 / 1920 * 100vw);
@@ -216,6 +249,7 @@ footer img {
 
 footer .info {
   grid-column: 3 / 11;
+
   justify-self: center;
   align-self: center;
 }
