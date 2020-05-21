@@ -242,9 +242,12 @@ div.oval a {
   border: 1px solid #445295;
 }
 
-footer img {
-  height: calc(94 / 1080 * 100vh);
+footer a {
   grid-column: 1 / 3;
+}
+
+footer a img{
+  height: calc(94 / 1080 * 100vh);
 }
 
 footer .info {
