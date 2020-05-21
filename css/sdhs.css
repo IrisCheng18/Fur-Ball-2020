@@ -240,6 +240,13 @@ ul.part4-text.goals {
   color: #A8002E;
 }
 
+.fa-star {
+  color: #a8002e;
+  font-size: calc(16 / 1920 * 100vw);
+
+  transform: rotate(-15deg);
+}
+
 /* --- MIDDLE - RIGHT SECTION */
 .middle.grid .right-section {
   grid-column: 11 / 13;

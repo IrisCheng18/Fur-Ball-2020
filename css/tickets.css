@@ -396,9 +396,9 @@ body {
 }
 
 .ticket-info.grid .amount .btn-amount{
-  width: calc(20 / 1920 * 100vw);
+  /* width: calc(20 / 1920 * 100vw);
   height: calc(20 / 1920 * 100vw);
-  border: 1px solid #00265b;
+  border: 1px solid #00265b; */
 
   display: flex;
   justify-content: center;
