@@ -346,6 +346,16 @@ body {
   left: 0;
 }
 
+#mountain-info:target {
+  top: 0;
+  left: 0;
+}
+
+#ocean-info:target {
+  top: 0;
+  left: 0;
+}
+
 .ticket-info.grid .btn-close {
   width: calc(30 / 1920 * 100vw);
   height: calc(30 / 1920 * 100vw);
