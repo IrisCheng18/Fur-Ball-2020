@@ -205,9 +205,17 @@ body {
   transform: rotate(-15deg);
 }
 
+.middle-section.grid p.text-bottom .text-tickets {
+  text-decoration: underline;
+}
+
 .middle-section.grid p.text-bottom .text-tickets:hover,
 .middle-section.grid p.text-bottom .text-mailto:hover {
   font-weight: bold;
+}
+
+#text-fur-ball {
+  color: #a8002e;
 }
 
 /* --- MIDDLE - RIGHT SECTION */
