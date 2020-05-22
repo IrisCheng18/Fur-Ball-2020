@@ -273,19 +273,13 @@ footer #social-links {
 
 footer #social-links li {
   display: inline-block;
-  padding-left: calc(24 / 1920 * 100vw);
+  padding-left: calc(47 / 1920 * 100vw);
 
   font-size: calc(30 / 1920 * 100vw);
 }
 
-.fa-facebook-square {
-  color: #dba24e;
-}
-
-.fa-twitter-square {
-  color: #f0ba3c;
-}
-
+.fa-facebook-square,
+.fa-twitter-square,
 .fa-instagram {
-  color: #e6a039;
+  color: #dba24e;
 }

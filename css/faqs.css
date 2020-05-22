@@ -283,22 +283,21 @@ footer #social-links {
   grid-column: 11 / 13;
 }
 
+footer #social-links {
+  justify-self: end;
+  align-self: center;
+  grid-column: 11 / 13;
+}
+
 footer #social-links li {
   display: inline-block;
   padding-left: calc(47 / 1920 * 100vw);
 
   font-size: calc(30 / 1920 * 100vw);
-  /* font-size: 3em; */
 }
 
-.fa-facebook-square {
-  color: #dba24e;
-}
-
-.fa-twitter-square {
-  color: #f0ba3c;
-}
-
+.fa-facebook-square,
+.fa-twitter-square,
 .fa-instagram {
-  color: #e6a039;
+  color: #dba24e;
 }
