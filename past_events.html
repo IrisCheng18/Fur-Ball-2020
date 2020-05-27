@@ -13,12 +13,168 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans+Condensed:wght@300&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/past_events.css">
 </head>
 
 <body>
-    <div class="container grid">
+    <div class="container-fluid h-100">
+        <!-- NAVBAR -->
+        <nav id="top-bar" class="row  navbar navbar-expand-sm navbar-light">
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-8 text-center text-capitalize align-self-center">
+
+                <div class="title">
+                    Be A Star & Champion For Pets
+                </div>
+                <div class="subtitle mt-2">
+                    Help And Share Your Love For Animals And Us All
+                </div>
+            </div>
+
+            <div class="col-sm-2 navbar">
+                    <div class="col-sm-6">
+                        <a class="navbar-brand" href="#"></a>
+                
+                        <button id="btn-navbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class=""></span>
+                        </button>
+        
+                        <div class="collapse navbar-collapse" id="navbarToggler">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item active ">
+                                    <a class="nav-link" href="./event_details.html">Event Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./tickets.html">Tickets</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./sponsors.html">Sponsors</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./donations.html">Donations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./sdhs.html">SDHS Info</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Past Events</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./faqs.html">FAQ's</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="home-button" class="col-sm-6 d-flex justify-content-sm-end">
+                        <a  href="./index.html">
+                            <p class="d-flex justify-content-sm-center align-items-center">Home</p>
+                        </a>
+                    </div>
+            </div>
+        </nav>
+
+
+        <!-- <div class="col-sm-2">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                   
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                      </ul>
+                     
+                    </div>
+                  </nav>
+            </div> -->
+
+        <!-- </div> -->
+
+        <!-- MIDDLE SECTION -->
+        <div id="middle-section" class="row">
+            <div class="col-sm-2  text-center">
+                <div class="row">
+                    <div id="logo" class="col-sm-12 col-lg-2">
+                        <a href="./event_details.html">
+                            <img src="images/black logo with texts.png" alt="Logo">
+                        </a>
+
+                        <div id="date" class="text-center">
+                            <p class="mt-2">Saturday, October 3rd</p>
+                            <p class="mt-2">@ 6:00 - 11:00 P.M.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-8">
+
+            </div>
+
+            <div class="col-sm-2">
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="row mt-4 py-2 border-top">
+            <div class="col-sm-2">
+                <a class="d-flex my-2 justify-content-center align-items-center" href="https://www.sdhumane.org/"
+                    target="_blank">
+                    <img id="sdhs-logo" src="images/SDHS Logo Blue.png" alt="SDHS Logo">
+                </a>
+            </div>
+
+            <div id="info" class="col-sm-8  d-flex justify-content-sm-center align-items-center">
+                <div class="px-3 my-2 ">5500 Gaines Street, San Diego, CA 92110</div>
+                <div class="px-3 my-2 ">619-243-3469 </div>
+                <div class="px-3 my-2 ">
+                    <a href="mailto:furball@sdhumane.org">furball@sdhumane.org</a>
+                </div>
+            </div>
+
+            <div id="social-links" class="col-sm-2 text-center d-flex align-items-center">
+                <div id="facebook" class="my-2 list-inline-item">
+                    <a href="https://www.facebook.com/SanDiegoHumaneSociety" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>
+                </div>
+                <div id="twitter" class="my-2 list-inline-item">
+                    <a href="https://twitter.com/sdhumane" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                </div>
+                <div id="instagram" class="my-2 list-inline-item">
+                    <a href="https://www.instagram.com/sdhumanesociety" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- <div class="container grid">
         <div class="top grid">
             <ul class="grid">
                 <li class="title">
@@ -29,7 +185,6 @@
                 </li>
             </ul>
             <a class="btn_menu" href="index.html">
-                <!-- <img  src="images/menu_button.png" alt="Menu Button"> -->
                 <p>Home</p>
             </a>
         </div>
@@ -79,8 +234,8 @@
                 </div>
 
                 <div class="name_image grid">
-                    <!-- <p>FAQ's</p>
-                    <img src="images/dog_.png" alt="Event Details"> -->
+                    <p>FAQ's</p>
+                    <img src="images/dog_.png" alt="Event Details">
                 </div>
 
             </section>
@@ -102,19 +257,35 @@
 
             <ul id="social-links">
                 <li>
-                    <a href="https://www.facebook.com/SanDiegoHumaneSociety" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.facebook.com/SanDiegoHumaneSociety" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>
                 </li>
                 <li>
                     <a href="https://twitter.com/sdhumane" target="_blank"><i class="fab fa-twitter-square"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/sdhumanesociety" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/sdhumanesociety" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
                 </li>
             </ul>
         </footer>
 
-    </div>
+    </div> -->
 
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
 </body>
 
