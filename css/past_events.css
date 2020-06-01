@@ -238,8 +238,8 @@ footer #info div a {
   }
 
   #middle-section .page-name.card {
-    position: relative;
-    top: calc(270 / 1080 * 100vh);
+    position: fixed;
+    top: calc(730 / 1080 * 100vh);
 
     background-color: #fafaff;
     border: none;
