@@ -10,8 +10,8 @@ body {
 
 body {
   font-family: "Optima", sans-serif;
-  font-size: 62.5%;
 
+  background-color: #fafaff;
   color: #00265b;
 }
 
@@ -21,33 +21,34 @@ body {
 #top-bar {
   height: 15%;
   z-index: 3;
+
+  font-family: "Cormorant Garamond", serif;
 }
 
 .title {
-  font-size: 2em;
-  letter-spacing: 0.02em;
+  font-size: cal(20 / 1920 * 100vw);
+  letter-spacing: 0.2px;
 }
 
 .subtitle {
-  font-size: 1.4em;
-  letter-spacing: 0.01em;
+  font-size: cal(14 / 1920 * 100vw);
+  letter-spacing: 0.1px;
 }
 
 #home-button {
   visibility: hidden;
 }
 
-
 #btn-navbar {
   position: absolute;
   right: 0;
 
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, 0.5);
 
   width: 35px;
   height: 35px;
 
-  font-size: 1.2em;
+  font-size: cal(12 / 1920 * 100vw);
 
   border-radius: 50%;
   border: 1px solid #00265b;
@@ -55,7 +56,7 @@ body {
 }
 
 /* 
-** --- MIDDLE SECTION ---
+** --- MIDDLE-LEFT SECTION STYLES ---
 */
 #logo a img {
   width: 50%;
@@ -63,9 +64,17 @@ body {
 
 #date {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.6em;
+  font-size: cal(16 / 1920 * 100vw);
   color: black;
 }
+
+/* 
+** --- MIDDLE-MIDDLE SECTION STYLES ---
+*/
+
+/* 
+** --- MIDDLE-RIGHT SECTION STYLES ---
+*/
 
 /*
  * --- FOOTER STYLES ---
@@ -75,7 +84,7 @@ body {
 }
 
 #info {
-  font-size: 1.6em;
+  font-size: cal(16 / 1920 * 100vw);
   flex-direction: column;
   margin-top: 5%;
 }
@@ -87,7 +96,7 @@ footer #info div a {
 
 #social-links {
   justify-content: center;
-  font-size: 3em;
+  font-size: 30px;
   margin-top: 5%;
 }
 
@@ -111,34 +120,42 @@ footer #info div a {
 }
 
 /*
- * ─── 1440PX AND UP STYLES ────────────────────────────────────────────────────────
+ * ─── 768PX AND UP STYLES ────────────────────────────────────────────────────────
  */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   #top-bar,
-  #middle-section {
-    padding-left: 7.3%;
-    padding-right: 7.3%;
+  #middle-section,
+  footer {
+    padding-left: calc(140 / 1920 * 100vw);
+    padding-right: calc(140 / 1920 * 100vw);
   }
   /*
   ** --- NAVBAR STYLES ---
   **/
   #top-bar {
-    height: 12.6%;
+    height: 12.6vh;
   }
 
   .title {
-    font-size: 3em;
-    letter-spacing: 0.08em;
+    font-size: calc(36 / 1080 * 100vh);
+    letter-spacing: 0.5px;
   }
 
   .subtitle {
-    font-size: 1.8em;
-    letter-spacing: 0.08em;
+    font-size: calc(24 / 1080 * 100vh);
+    letter-spacing: 1px;
   }
-
 
   #navbarToggler {
     visibility: hidden;
+  }
+
+  #top-bar .navbar {
+    padding: 0;
+  }
+
+  #home-button {
+    padding: 0;
   }
 
   #home-button a {
@@ -146,21 +163,21 @@ footer #info div a {
     color: #00265b;
   }
 
-  #home-button a p{
-    width: calc(55 / 1920 * 100vw);
-    height: calc(55 / 1920 * 100vw);
-  
+  #home-button a p {
+    width: calc(60 / 1920 * 100vw);
+    height: calc(60 / 1920 * 100vw);
+
     border-radius: 50%;
     border: 1px solid #00265b;
-  
+
     font-family: "Optima", sans-serif;
-    font-size: 1.6em;
+    font-size: calc(16 / 1920 * 100vw);
 
     visibility: visible;
   }
 
   /*
-  ** --- MIDDLE SECTION STYLES ---
+  ** --- MIDDLE-LEFT SECTION STYLES ---
   **/
 
   /* logo */
@@ -169,25 +186,61 @@ footer #info div a {
     top: 40vh;
     left: 0;
 
-    padding-left: 7.3%;
+    padding-left: calc(140 / 1920 * 100vw);
   }
 
   #logo a img {
-    padding-left: 15px;
-    width: 90%;
+    width: calc(189 / 1080 * 100vh);
   }
 
   #date {
     position: relative;
-    padding-left: 15px;
+  }
+
+  /* 
+  ** --- MIDDLE-RIGHT SECTION STYLES ---
+  */
+  #middle-right {
+    padding: 0;
+    z-index: 3;
+  }
+
+  #middle-right .col-12 {
+    padding: 0;
+  }
+
+  #middle-section .btn-primary {
+    background-color: #fafaff;
+    color: #00265b;
+    border-color: #00265b;
+
+    width: calc(100 / 1920 * 100vw);
+    height: calc(30 / 1920 * 100vw);
+    border-radius: calc(15 / 1920 * 100vw);
+    font-size: calc(14 / 1920 * 100vw);
+
+    padding: 0;
+  }
+
+  #middle-section .btn-primary:hover {
+    font-weight: bold;
+    border-radius: calc(15 / 1920 * 100vw);
+    border: 2px solid #00265b;
+  }
+
+  #middle-section .page-name.card {
+    /* position: absolute;
+  top: 500px; */
+    margin-bottom: calc(30 / 1920 * 100vw);
+
+    width: calc(150 / 1080 * 100vh);
   }
 
   /*
   ** --- FOOTER STYLES ---
   **/
-  footer {
-    padding-left: 7.3%;
-    padding-right: 7.3%;
+  #footer-logo {
+    padding: 0;
   }
 
   #info {
