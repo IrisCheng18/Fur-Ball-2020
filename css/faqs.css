@@ -71,7 +71,37 @@ body {
 /* 
  ** --- MIDDLE-MIDDLE SECTION STYLES ---
  */
+#middle-middle {
+  margin-top: calc(50 / 1920 * 100vw);
+}
 
+ .card {
+   border: none;
+ }
+
+  .card-header {
+    background-color: #c7ecff;
+  }
+
+ .card-body {
+  background-color: #c7ecff;
+  line-height: 1.4;
+  letter-spacing: calc(0.5 / 1920 * 100vw);
+}
+
+.btn-link.btn-block {
+  color: #00265b;
+}
+
+ .card-body ul{
+   list-style-type: disc;
+   list-style: inside;
+ }
+
+.faqs-title {
+  text-align: center;
+}
+ 
 /*
   * --- FOOTER STYLES ---
   */
@@ -196,24 +226,21 @@ footer #info div a {
   /* 
    ** --- MIDDLE-MIDDLE SECTION STYLES ---
    */
-  .card {
-    border: none;
-  }
-
   .card-header {
-    background-color: #c7ecff;
     padding: 0;
   }
 
   .card-body {
     padding: 0;
 
-    font-size: calc(20 / 1920 * 100vw);
-    background-color: #c7ecff;
+    font-size: calc(18 / 1920 * 100vw);
+    line-height: 1.4;
+    letter-spacing: calc(0.5 / 1920 * 100vw);
   }
 
   .faqs-title {
     font-size: calc(20 / 1920 * 100vw);
+    text-align: start;
   }
 
   .btn-link.btn-block {
