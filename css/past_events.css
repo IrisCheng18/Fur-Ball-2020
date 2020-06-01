@@ -72,9 +72,6 @@ body {
 ** --- MIDDLE-MIDDLE SECTION STYLES ---
 */
 
-/* 
-** --- MIDDLE-RIGHT SECTION STYLES ---
-*/
 
 /*
  * --- FOOTER STYLES ---
@@ -198,6 +195,18 @@ footer #info div a {
   }
 
   /* 
+  ** --- MIDDLE-MIDDLE SECTION STYLES ---
+  */
+  #middle-middle {
+    margin: 0 auto;
+  }
+
+  #middle-middle p{
+    font-size: calc(22 / 1920 * 100vw);
+  }
+
+
+  /* 
   ** --- MIDDLE-RIGHT SECTION STYLES ---
   */
   #middle-right {
@@ -229,12 +238,20 @@ footer #info div a {
   }
 
   #middle-section .page-name.card {
-    /* position: absolute;
-  top: 500px; */
-    margin-bottom: calc(30 / 1920 * 100vw);
+    position: relative;
+    top: calc(270 / 1080 * 100vh);
+
+    background-color: #fafaff;
+    border: none;
 
     width: calc(150 / 1080 * 100vh);
   }
+
+  #middle-section .page-name.card p {
+    font-size: calc(22 / 1080 * 100vh);
+  }
+
+
 
   /*
   ** --- FOOTER STYLES ---
