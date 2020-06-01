@@ -75,15 +75,15 @@ body {
   margin-top: calc(50 / 1920 * 100vw);
 }
 
- .card {
-   border: none;
- }
+.card {
+  border: none;
+}
 
-  .card-header {
-    background-color: #c7ecff;
-  }
+.card-header {
+  background-color: #c7ecff;
+}
 
- .card-body {
+.card-body {
   background-color: #c7ecff;
   line-height: 1.4;
   letter-spacing: calc(0.5 / 1920 * 100vw);
@@ -93,18 +93,22 @@ body {
   color: #00265b;
 }
 
- .card-body ul{
-   list-style-type: disc;
-   list-style: inside;
- }
+.card-body ul {
+  list-style-type: disc;
+  list-style: inside;
+}
 
 .faqs-title {
   text-align: center;
 }
- 
+
 /*
   * --- FOOTER STYLES ---
   */
+.border-top {
+  border-top: 1px solid #bcbec0 !important;
+}
+
 #sdhs-logo {
   width: 70%;
 }
@@ -249,7 +253,6 @@ footer #info div a {
     font-size: calc(20 / 1920 * 100vw);
     color: #00265b;
   }
-  
 
   /* 
    ** --- MIDDLE-RIGHT SECTION STYLES ---
