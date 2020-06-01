@@ -187,7 +187,7 @@ footer #info div a {
   }
 
   #logo a img {
-    width: calc(189 / 1080 * 100vh);
+    width: calc(150 / 1080 * 100vh);
   }
 
   #date {
