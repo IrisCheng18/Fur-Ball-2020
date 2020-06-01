@@ -197,8 +197,19 @@
    /* 
    ** --- MIDDLE-MIDDLE SECTION STYLES ---
    */
+   .card {
+     border: none;
+   }
 
- 
+   .card-header {
+     background-color: #C7ECFF;
+     padding: 0;
+   }
+
+   .card-body{
+     padding: 0;
+     background-color: #C7ECFF;
+   }
  
    /* 
    ** --- MIDDLE-RIGHT SECTION STYLES ---

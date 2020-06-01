@@ -71,7 +71,9 @@ body {
 /* 
 ** --- MIDDLE-MIDDLE SECTION STYLES ---
 */
-
+.carousel-item img{
+  width: 100%;
+}
 
 /*
  * --- FOOTER STYLES ---
@@ -201,10 +203,9 @@ footer #info div a {
     margin: 0 auto;
   }
 
-  #middle-middle p{
+  #middle-middle p {
     font-size: calc(22 / 1920 * 100vw);
   }
-
 
   /* 
   ** --- MIDDLE-RIGHT SECTION STYLES ---
@@ -250,8 +251,6 @@ footer #info div a {
   #middle-section .page-name.card p {
     font-size: calc(22 / 1080 * 100vh);
   }
-
-
 
   /*
   ** --- FOOTER STYLES ---
