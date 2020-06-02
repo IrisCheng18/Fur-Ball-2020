@@ -114,8 +114,8 @@ body {
 .title.grid .text-fur-ball {
   font-size: calc(33 / 1080 * 100vh);
 
-  margin-left: calc(43 / 1080 * 100vh);
-  margin-right: calc(57 / 1080 * 100vh);
+  margin-left: calc(20 / 1080 * 100vh);
+  margin-right: calc(20 / 1080 * 100vh);
 }
 
 .title.grid .text-2020 {

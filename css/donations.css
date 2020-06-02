@@ -112,6 +112,17 @@ body {
   font-size: 14px;
 }
 
+.fas.fa-star,
+.fas.fa-heart {
+  color: #981E31;
+
+  font-size: 22px;
+}
+
+.fas.fa-star {
+  transform: rotate(-15deg);
+}
+
 /*
    * --- FOOTER STYLES ---
    */
@@ -270,14 +281,14 @@ footer #info div a {
   }
 
   #text-appreciation {
-    font-size: calc(20 / 1920 * 100vw);
+    font-size: calc(22 / 1920 * 100vw);
   }
 
   #quote {
     margin-top: calc(70 / 1920 * 100vw);
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 
     font-size: calc(18 / 1920 * 100vw);
   }
