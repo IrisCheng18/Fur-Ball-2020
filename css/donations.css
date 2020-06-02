@@ -277,7 +277,7 @@ footer #info div a {
     margin-top: calc(40 / 1920 * 100vw);
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 
     font-size: calc(18 / 1920 * 100vw);
   }
