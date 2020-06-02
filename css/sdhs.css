@@ -276,18 +276,22 @@ footer #info div a {
 
   #middle-section .page-name.card {
     position: fixed;
-    top: calc(730 / 1080 * 100vh);
+    top: calc(700 / 1080 * 100vh);
 
     background-color: #fffbef;
     border: none;
 
-    width: calc(150 / 1080 * 100vh);
+    width: calc(160 / 1080 * 100vh);
   }
 
   #middle-section .page-name.card p {
     font-size: calc(22 / 1080 * 100vh);
+    line-height: 1.2;
   }
 
+  #middle-section .page-name.card img {
+    width: calc(150 / 1920 * 100vw);
+  }
   /*
       ** --- FOOTER STYLES ---
       **/
