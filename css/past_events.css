@@ -71,6 +71,10 @@ body {
 /* 
 ** --- MIDDLE-MIDDLE SECTION STYLES ---
 */
+#middle-middle {
+  margin: 30px 15px;
+}
+
 .carousel-item img{
   width: 100%;
 }
@@ -204,7 +208,7 @@ footer #info div a {
   ** --- MIDDLE-MIDDLE SECTION STYLES ---
   */
   #middle-middle {
-    margin: 0 auto;
+    margin: calc(25 / 1080 * 100vh) auto;
   }
 
   #middle-middle p {

@@ -232,22 +232,25 @@ footer #info div a {
    */
    #middle-middle {
     margin-top: 0;
+
+    line-height: 1.4;
+    letter-spacing: calc(1 / 1920 * 100vw);
   } 
 
-  .card-header {
+  .card-header,
+  .card-body {
     padding: 0;
   }
 
-  .card-body {
-    padding: 0;
-
+  .card-body p,
+  .card-body ul li {
     font-size: calc(18 / 1920 * 100vw);
     line-height: 1.4;
-    letter-spacing: calc(0.5 / 1920 * 100vw);
+    letter-spacing: calc(1 / 1920 * 100vw);
   }
 
   .faqs-title {
-    font-size: calc(20 / 1920 * 100vw);
+    font-size: calc(22 / 1920 * 100vw);
     text-align: start;
   }
 
@@ -256,6 +259,9 @@ footer #info div a {
 
     font-size: calc(20 / 1920 * 100vw);
     color: #00265b;
+
+    line-height: 1.4;
+    letter-spacing: calc(1 / 1920 * 100vw);
   }
 
   /* 
