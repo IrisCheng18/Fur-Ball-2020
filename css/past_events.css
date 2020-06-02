@@ -26,12 +26,12 @@ body {
 }
 
 .title {
-  font-size: cal(20 / 1920 * 100vw);
+  font-size: 20px;
   letter-spacing: 0.2px;
 }
 
 .subtitle {
-  font-size: cal(14 / 1920 * 100vw);
+  font-size: 16px;
   letter-spacing: 0.1px;
 }
 
@@ -48,7 +48,7 @@ body {
   width: 35px;
   height: 35px;
 
-  font-size: cal(12 / 1920 * 100vw);
+  font-size: 14px;
 
   border-radius: 50%;
   border: 1px solid #00265b;
@@ -64,7 +64,7 @@ body {
 
 #date {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: cal(16 / 1920 * 100vw);
+  font-size: 14px;
   color: black;
 }
 
@@ -87,7 +87,7 @@ body {
 }
 
 #info {
-  font-size: cal(16 / 1920 * 100vw);
+  font-size: 14px;
   flex-direction: column;
   margin-top: 5%;
 }
@@ -266,6 +266,8 @@ footer #info div a {
   #info {
     flex-direction: row;
     margin-top: 0;
+
+    font-size: calc(16 / 1920 * 100vw);
   }
 
   #sdhs-logo {
