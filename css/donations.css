@@ -87,13 +87,14 @@ body {
 }
 
 .btn.btn-warning {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   border: none;
 
+  font-size: 14px;
   background-color: #00265b;
-  color: #f0de3c;
+  color: #e6a039;
 }
 
 .btn.btn-success {
@@ -260,8 +261,6 @@ footer #info div a {
   }
 
   .btn.btn-success {
-    /* margin-bottom: calc(10 / 1920 * 100vw); */
-
     background-color: #e6a039;
     color: white;
     border: none;
