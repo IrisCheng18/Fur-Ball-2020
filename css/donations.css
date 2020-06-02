@@ -1,287 +1,361 @@
 /*
  * --- GLOBAL STYLES ---
  */
- html,
- body {
-   height: 100vh;
-   margin: 0;
-   padding: 0;
- }
- 
- body {
-   font-family: "Optima", sans-serif;
- 
-   background-color: #FDE7DE;
-   color: #00265b;
- }
- 
- /*
-  ** --- NAVBAR STYLES ---
-  **/
- #top-bar {
-   height: 15%;
-   z-index: 3;
- 
-   font-family: "Cormorant Garamond", serif;
- }
- 
- .title {
-   font-size: cal(20 / 1920 * 100vw);
-   letter-spacing: 0.2px;
- }
- 
- .subtitle {
-   font-size: cal(14 / 1920 * 100vw);
-   letter-spacing: 0.1px;
- }
- 
- #home-button {
-   visibility: hidden;
- }
- 
- #btn-navbar {
-   position: absolute;
-   right: 0;
- 
-   color: rgba(0, 0, 0, 0.5);
- 
-   width: 35px;
-   height: 35px;
- 
-   font-size: cal(12 / 1920 * 100vw);
- 
-   border-radius: 50%;
-   border: 1px solid #00265b;
-   /* border-color:red; */
- }
- 
- /* 
-  ** --- MIDDLE-LEFT SECTION STYLES ---
-  */
- #logo a img {
-   width: 50%;
- }
- 
- #date {
-   font-family: "Open Sans Condensed", sans-serif;
-   font-size: cal(16 / 1920 * 100vw);
-   color: black;
- }
- 
- /* 
-  ** --- MIDDLE-MIDDLE SECTION STYLES ---
-  */
- #middle-middle {
-   margin-top: calc(50 / 1920 * 100vw);
- }
- 
-  
-  
- /*
-   * --- FOOTER STYLES ---
-   */
-.border-top{
-  border-top: 1px solid #BCBEC0 !important;
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
- #sdhs-logo {
-   width: 70%;
- }
- 
- #info {
-   font-size: cal(16 / 1920 * 100vw);
-   flex-direction: column;
-   margin-top: 5%;
- }
- 
- footer #info div a {
-   text-decoration: none;
-   color: #00265b;
- }
- 
- #social-links {
-   justify-content: center;
-   font-size: 30px;
-   margin-top: 5%;
- }
- 
- #facebook,
- #twitter,
- #instagram {
-   margin-left: 5%;
-   margin-right: 5%;
- }
- 
- .fa-facebook-square {
-   color: #dba24e;
- }
- 
- .fa-twitter-square {
-   color: #f0ba3c;
- }
- 
- .fa-instagram {
-   color: #e6a039;
- }
- 
- /*
+body {
+  font-family: "Optima", sans-serif;
+
+  background-color: #fde7de;
+  color: #00265b;
+}
+
+/*
+  ** --- NAVBAR STYLES ---
+  **/
+#top-bar {
+  height: 15%;
+  z-index: 3;
+
+  font-family: "Cormorant Garamond", serif;
+}
+
+.title {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+
+.subtitle {
+  font-size: 16px;
+  letter-spacing: 0.1px;
+}
+
+#home-button {
+  visibility: hidden;
+}
+
+#btn-navbar {
+  position: absolute;
+  right: 0;
+
+  color: rgba(0, 0, 0, 0.5);
+
+  width: 35px;
+  height: 35px;
+
+  font-size: 14px;
+
+  border-radius: 50%;
+  border: 1px solid #00265b;
+  /* border-color:red; */
+}
+
+/* 
+  ** --- MIDDLE-LEFT SECTION STYLES ---
+  */
+#logo a img {
+  width: 50%;
+}
+
+#date {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+/* 
+  ** --- MIDDLE-MIDDLE SECTION STYLES ---
+  */
+#middle-middle {
+  margin-top: calc(120 / 1920 * 100vw);
+  line-height: 1.4;
+  letter-spacing: calc(0.5 / 1920 * 100vw);
+}
+
+#text-amount {
+  background-color: #e6a039;
+  color: white;
+}
+
+.input-group-text {
+  background-color: #fde7de;
+}
+
+.btn.btn-warning {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+
+  background-color: #00265b;
+  color: #f0de3c;
+}
+
+.btn.btn-success {
+  background-color: #e6a039;
+  color: white;
+  border: none;
+}
+
+#quote {
+  margin: 30px 0;
+
+  display: flex;
+  justify-content: center;
+
+  font-size: 14px;
+}
+
+/*
+   * --- FOOTER STYLES ---
+   */
+.border-top {
+  border-top: 1px solid #bcbec0 !important;
+}
+
+#sdhs-logo {
+  width: 70%;
+}
+
+#info {
+  font-size: 14px;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+footer #info div a {
+  text-decoration: none;
+  color: #00265b;
+}
+
+#social-links {
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 5%;
+}
+
+#facebook,
+#twitter,
+#instagram {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.fa-facebook-square {
+  color: #dba24e;
+}
+
+.fa-twitter-square {
+  color: #f0ba3c;
+}
+
+.fa-instagram {
+  color: #e6a039;
+}
+
+/*
    * ─── 768PX AND UP STYLES ────────────────────────────────────────────────────────
    */
- @media screen and (min-width: 768px) {
-   #top-bar,
-   #middle-section,
-   footer {
-     padding-left: calc(140 / 1920 * 100vw);
-     padding-right: calc(140 / 1920 * 100vw);
-   }
-   /*
+@media screen and (min-width: 768px) {
+  #top-bar,
+  #middle-section,
+  footer {
+    padding-left: calc(140 / 1920 * 100vw);
+    padding-right: calc(140 / 1920 * 100vw);
+  }
+  /*
     ** --- NAVBAR STYLES ---
     **/
-   #top-bar {
-     height: 12.6vh;
-   }
- 
-   .title {
-     font-size: calc(36 / 1080 * 100vh);
-     letter-spacing: 0.5px;
-   }
- 
-   .subtitle {
-     font-size: calc(24 / 1080 * 100vh);
-     letter-spacing: 1px;
-   }
- 
-   #navbarToggler {
-     visibility: hidden;
-   }
- 
-   #top-bar .navbar {
-     padding: 0;
-   }
- 
-   #home-button {
-     padding: 0;
-   }
- 
-   #home-button a {
-     text-decoration: none;
-     color: #00265b;
-   }
- 
-   #home-button a p {
-     width: calc(60 / 1920 * 100vw);
-     height: calc(60 / 1920 * 100vw);
- 
-     border-radius: 50%;
-     border: 1px solid #00265b;
- 
-     font-family: "Optima", sans-serif;
-     font-size: calc(16 / 1920 * 100vw);
- 
-     visibility: visible;
-   }
- 
-   /*
+  #top-bar {
+    height: 12.6vh;
+  }
+
+  .title {
+    font-size: calc(36 / 1080 * 100vh);
+    letter-spacing: 0.5px;
+  }
+
+  .subtitle {
+    font-size: calc(24 / 1080 * 100vh);
+    letter-spacing: 1px;
+  }
+
+  #navbarToggler {
+    visibility: hidden;
+  }
+
+  #top-bar .navbar {
+    padding: 0;
+  }
+
+  #home-button {
+    padding: 0;
+  }
+
+  #home-button a {
+    text-decoration: none;
+    color: #00265b;
+  }
+
+  #home-button a p {
+    width: calc(60 / 1920 * 100vw);
+    height: calc(60 / 1920 * 100vw);
+
+    border-radius: 50%;
+    border: 1px solid #00265b;
+
+    font-family: "Optima", sans-serif;
+    font-size: calc(16 / 1920 * 100vw);
+
+    visibility: visible;
+  }
+
+  /*
     ** --- MIDDLE-LEFT SECTION STYLES ---
     **/
- 
-   /* logo */
-   #logo {
-     position: fixed;
-     top: 40vh;
-     left: 0;
- 
-     padding-left: calc(140 / 1920 * 100vw);
-   }
- 
-   #logo a img {
-     width: calc(150 / 1080 * 100vh);
-   }
- 
-   #date {
-     position: relative;
-   }
- 
-   /* 
+
+  /* logo */
+  #logo {
+    position: fixed;
+    top: 40vh;
+    left: 0;
+
+    padding-left: calc(140 / 1920 * 100vw);
+  }
+
+  #logo a img {
+    width: calc(150 / 1080 * 100vh);
+  }
+
+  #date {
+    position: relative;
+    font-size: calc(16 / 1920 * 100vw);
+  }
+
+  /* 
     ** --- MIDDLE-MIDDLE SECTION STYLES ---
     */
-  
-    
- 
-   /* 
+  #middle-middle {
+    margin: calc(18 / 1920 * 100vw) 0;
+    padding: 0;
+
+    font-size: calc(20 / 1920 * 100vw);
+  }
+
+  .input-group-text {
+    margin-top: calc(20 / 1920 * 100vw);
+    font-size: calc(20 / 1920 * 100vw);
+  }
+
+  .btn.btn-warning {
+    width: calc(100 / 1920 * 100vw);
+    height: calc(100 / 1920 * 100vw);
+
+    font-size: calc(20 / 1920 * 100vw);
+  }
+
+  .btn.btn-success {
+    /* margin-bottom: calc(10 / 1920 * 100vw); */
+
+    background-color: #e6a039;
+    color: white;
+    border: none;
+    font-size: calc(22 / 1920 * 100vw);
+  }
+
+  #text-appreciation {
+    font-size: calc(20 / 1920 * 100vw);
+  }
+
+  #quote {
+    margin-top: calc(40 / 1920 * 100vw);
+
+    display: flex;
+    justify-content: flex-end;
+
+    font-size: calc(18 / 1920 * 100vw);
+  }
+
+  /* 
     ** --- MIDDLE-RIGHT SECTION STYLES ---
     */
-   #middle-right {
-     padding: 0;
-     z-index: 3;
-   }
- 
-   #middle-right .col-12 {
-     padding: 0;
-   }
- 
-   #middle-section .btn-primary {
-     background-color: #FDE7DE;
-     color: #00265b;
-     border-color: #00265b;
- 
-     width: calc(100 / 1920 * 100vw);
-     height: calc(30 / 1920 * 100vw);
-     border-radius: calc(15 / 1920 * 100vw);
-     font-size: calc(14 / 1920 * 100vw);
- 
-     padding: 0;
-   }
- 
-   #middle-section .btn-primary:hover {
-     font-weight: bold;
-     border-radius: calc(15 / 1920 * 100vw);
-     border: 2px solid #00265b;
-   }
- 
-   #middle-section .page-name.card {
-     position: fixed;
-     top: calc(730 / 1080 * 100vh);
- 
-     background-color: #FDE7DE;
-     border: none;
- 
-     width: calc(150 / 1080 * 100vh);
-   }
- 
-   #middle-section .page-name.card p {
-     font-size: calc(22 / 1080 * 100vh);
-   }
- 
-   /*
+  #middle-right {
+    padding: 0;
+    z-index: 3;
+  }
+
+  #middle-right .col-12 {
+    padding: 0;
+  }
+
+  #middle-section .btn-primary {
+    background-color: #fde7de;
+    color: #00265b;
+    border-color: #00265b;
+
+    width: calc(100 / 1920 * 100vw);
+    height: calc(30 / 1920 * 100vw);
+    border-radius: calc(15 / 1920 * 100vw);
+    font-size: calc(14 / 1920 * 100vw);
+
+    padding: 0;
+  }
+
+  #middle-section .btn-primary:hover {
+    font-weight: bold;
+    border-radius: calc(15 / 1920 * 100vw);
+    border: 2px solid #00265b;
+  }
+
+  #middle-section .page-name.card {
+    position: fixed;
+    top: calc(730 / 1080 * 100vh);
+
+    background-color: #fde7de;
+    border: none;
+
+    width: calc(150 / 1080 * 100vh);
+  }
+
+  #middle-section .page-name.card p {
+    font-size: calc(22 / 1080 * 100vh);
+  }
+
+  /*
     ** --- FOOTER STYLES ---
     **/
-   #footer-logo {
-     padding: 0;
-   }
- 
-   #info {
-     flex-direction: row;
-     margin-top: 0;
-   }
- 
-   #sdhs-logo {
-     width: 90%;
-   }
- 
-   #social-links {
-     justify-content: flex-end;
-     margin-top: 0;
-   }
- 
-   #facebook,
-   #twitter {
-     margin-left: 7%;
-     margin-right: 7%;
-   }
- 
-   #instagram {
-     margin-left: 7%;
-   }
- }
- 
+  #footer-logo {
+    padding: 0;
+  }
+
+  #info {
+    flex-direction: row;
+    margin-top: 0;
+
+    font-size: calc(16 / 1920 * 100vw);
+  }
+
+  #sdhs-logo {
+    width: 90%;
+  }
+
+  #social-links {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  #facebook,
+  #twitter {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  #instagram {
+    margin-left: 7%;
+  }
+}
