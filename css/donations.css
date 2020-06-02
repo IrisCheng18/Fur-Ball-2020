@@ -77,10 +77,10 @@ body {
   letter-spacing: calc(0.5 / 1920 * 100vw);
 }
 
-#text-amount {
+/* #text-amount {
   background-color: #e6a039;
   color: white;
-}
+} */
 
 .input-group-text {
   background-color: #fde7de;
@@ -93,8 +93,8 @@ body {
   border: none;
 
   font-size: 14px;
-  background-color: #00265b;
-  color: #e6a039;
+  background-color: #e6a039;
+  color: white;
 }
 
 .btn.btn-success {
@@ -104,7 +104,7 @@ body {
 }
 
 #quote {
-  margin: 30px 0;
+  margin: 50px 0 20px 0;
 
   display: flex;
   justify-content: center;
@@ -274,7 +274,7 @@ footer #info div a {
   }
 
   #quote {
-    margin-top: calc(40 / 1920 * 100vw);
+    margin-top: calc(70 / 1920 * 100vw);
 
     display: flex;
     justify-content: center;
