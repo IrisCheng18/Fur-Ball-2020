@@ -311,6 +311,10 @@ body {
 .outer_circle.grid .small_circles .moon,
 .outer_circle.grid .small_circles .star {
   background-color: #00265b;
+}
+
+.outer_circle.grid .small_circles .moon a,
+.outer_circle.grid .small_circles .star a {
   color: #f1df78;
 }
 
@@ -354,6 +358,16 @@ body {
 }
 
 #ocean-info:target {
+  top: 0;
+  left: 0;
+}
+
+#star-info:target {
+  top: 0;
+  left: 0;
+}
+
+#moon-info:target {
   top: 0;
   left: 0;
 }
