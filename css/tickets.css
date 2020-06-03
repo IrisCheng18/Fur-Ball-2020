@@ -308,6 +308,12 @@ body {
   z-index: 2;
 }
 
+.outer_circle.grid .small_circles .sky a,
+.outer_circle.grid .small_circles .mountain a,
+.outer_circle.grid .small_circles .ocean a {
+  color: #00265b;
+}
+
 .outer_circle.grid .small_circles .moon,
 .outer_circle.grid .small_circles .star {
   background-color: #00265b;
