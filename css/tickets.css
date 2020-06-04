@@ -11,7 +11,7 @@ body {
 body {
   font-family: "Optima", sans-serif;
 
-  background-color: #fde7de;
+  background-color: #FEECD3;
   color: #00265b;
 }
 
@@ -688,7 +688,7 @@ footer #info div a {
   }
 
   #middle-section .btn-primary {
-    background-color: #fde7de;
+    background-color: #FEECD3;
     color: #00265b;
     border-color: #00265b;
 
@@ -710,7 +710,7 @@ footer #info div a {
     position: fixed;
     top: calc(730 / 1080 * 100vh);
 
-    background-color: #fde7de;
+    background-color: #FEECD3;
     border: none;
 
     width: calc(150 / 1080 * 100vh);
