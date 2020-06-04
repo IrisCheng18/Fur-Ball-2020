@@ -11,7 +11,7 @@ body {
 body {
   font-family: "Optima", sans-serif;
 
-  background-color: #feecd3;
+  background-color: #FFF8E0;
   color: #00265b;
 }
 
@@ -251,7 +251,7 @@ footer #info div a {
   .middle-section .section1 {
     position: absolute;
     top: 0;
-    left: 250px;
+    left: calc(250 / 1920 * 100vw);
 
     height: calc(700 / 1920 * 100vw);
     font-family: "EB Garamond", serif;
@@ -318,8 +318,8 @@ footer #info div a {
 
   .section1 .center-point {
     position: absolute;
-    top: 150px;
-    left: 300px;
+    top: calc(150 / 1920 * 100vw);
+    left: calc(300 / 1920 * 100vw);
   }
 
   .center-point .image-invited {
@@ -507,7 +507,7 @@ footer #info div a {
   }
 
   #middle-section .btn-primary {
-    background-color: #feecd3;
+    background-color: #FFF8E0;
     color: #00265b;
     border-color: #00265b;
 
@@ -529,7 +529,7 @@ footer #info div a {
     position: fixed;
     top: calc(730 / 1080 * 100vh);
 
-    background-color: #feecd3;
+    background-color: #FFF8E0;
     border: none;
 
     width: calc(150 / 1080 * 100vh);
