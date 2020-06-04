@@ -425,8 +425,8 @@ footer #info div a {
   /* section2 */
   .middle-section .section2 {
     position: absolute;
-    top: 700px;
-    left: 260px;
+    top: calc(700 / 1920 * 100vw);
+    left: calc(260 / 1920 * 100vw);
 
     letter-spacing: calc(1 / 1920 * 100vw);
   }
