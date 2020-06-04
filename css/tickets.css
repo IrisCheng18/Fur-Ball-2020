@@ -1,123 +1,108 @@
 /*
  * --- GLOBAL STYLES ---
  */
- html,
- body {
-   height: 100vh;
-   margin: 0;
-   padding: 0;
- }
- 
- body {
-   font-family: "Optima", sans-serif;
- 
-   background-color: #fde7de;
-   color: #00265b;
- }
- 
- /*
-   ** --- NAVBAR STYLES ---
-   **/
- #top-bar {
-   height: 15%;
-   z-index: 3;
- 
-   font-family: "Cormorant Garamond", serif;
- }
- 
- .title {
-   font-size: 20px;
-   letter-spacing: 0.2px;
- }
- 
- .subtitle {
-   font-size: 14px;
-   letter-spacing: 0.1px;
- }
- 
- #home-button {
-   visibility: hidden;
- }
- 
- #btn-navbar {
-   position: absolute;
-   right: 0;
- 
-   color: rgba(0, 0, 0, 0.5);
- 
-   width: 35px;
-   height: 35px;
- 
-   font-size: 14px;
- 
-   border-radius: 50%;
-   border: 1px solid #00265b;
-   /* border-color:red; */
- }
- 
- /* 
-   ** --- MIDDLE-LEFT SECTION STYLES ---
-   */
- #logo a img {
-   width: 50%;
- }
- 
- #date {
-   font-family: "Open Sans Condensed", sans-serif;
-   font-size: 14px;
-   color: black;
- }
- 
- /* 
-   ** --- MIDDLE-MIDDLE SECTION STYLES ---
-   */
- #middle-middle {
-   margin: 30px 15px;
-   line-height: 1.4;
-   letter-spacing: calc(0.5 / 1920 * 100vw);
- }
-
-/* --- MIDDLE - MIDDLE SECTION */
-.middle.grid .middle-section.grid {
-  grid-column: 3 / 11;
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-.middle-section.grid .outer_circle {
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  justify-self: center;
+body {
+  font-family: "Optima", sans-serif;
 
-  width: calc(640 / 1920 * 100vw);
-  height: calc(640 / 1920 * 100vw);
+  background-color: #fde7de;
+  color: #00265b;
+}
+
+/*
+   ** --- NAVBAR STYLES ---
+   **/
+#top-bar {
+  height: 15%;
+  z-index: 3;
+
+  font-family: "Cormorant Garamond", serif;
+}
+
+.title {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+
+.subtitle {
+  font-size: 14px;
+  letter-spacing: 0.1px;
+}
+
+#home-button {
+  visibility: hidden;
+}
+
+#btn-navbar {
+  position: absolute;
+  right: 0;
+
+  color: rgba(0, 0, 0, 0.5);
+
+  width: 35px;
+  height: 35px;
+
+  font-size: 14px;
+
+  border-radius: 50%;
+  border: 1px solid #00265b;
+  /* border-color:red; */
+}
+
+/* 
+   ** --- MIDDLE-LEFT SECTION STYLES ---
+   */
+#logo a img {
+  width: 50%;
+}
+
+#date {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+/* 
+   ** --- MIDDLE-MIDDLE SECTION STYLES ---
+   */
+#middle-middle {
+  margin: 30px 15px;
+  line-height: 1.4;
+  letter-spacing: calc(0.5 / 1920 * 100vw);
+}
+
+.outer_circle {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   border: 1px solid black;
 }
 
-.middle-section.grid .outer_circle.grid .left_section.grid {
-  grid-row: 1 / 3;
-  grid-column: 1 / 2;
+.left_half_circle {
+  position: absolute;
+  top: 50px;
+  left: 50px;
 
-  width: calc(320 / 1920 * 100vw);
-  height: calc(640 / 1920 * 100vw);
-}
-
-.outer_circle .left_section.grid .left_half_circle {
-  justify-self: end;
-  align-self: center;
-
-  width: calc(160 / 1920 * 100vw);
-  height: calc(320 / 1920 * 100vw);
-  border-bottom-left-radius: calc(320 / 1920 * 100vw);
-  border-top-left-radius: calc(320 / 1920 * 100vw);
+  width: 100px;
+  height: 200px;
+  border-bottom-left-radius: 200px;
+  border-top-left-radius: 200px;
 
   background-color: #f1df78;
   color: #00265b;
-  font-size: calc(22 / 1920 * 100vw);
-
-  /* margin: 50% 0 0 50%; */
+  font-size: 16px;
 
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -125,31 +110,21 @@
   text-align: center;
 }
 
-.middle-section.grid .outer_circle.grid .right_section.grid {
-  grid-row: 1 / 3;
-  grid-column: 2 / 3;
+.right_half_circle {
+  position: absolute;
+  top: 50px;
+  left: 150px;
 
-  width: calc(320 / 1920 * 100vw);
-  height: calc(640 / 1920 * 100vw);
-}
-
-.outer_circle.grid .right_section.grid .right_half_circle {
-  justify-self: start;
-  align-self: center;
-
-  width: calc(160 / 1920 * 100vw);
-  height: calc(320 / 1920 * 100vw);
-  border-bottom-right-radius: calc(320 / 1920 * 100vw);
-  border-top-right-radius: calc(320 / 1920 * 100vw);
+  width: 100px;
+  height: 200px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
 
   background-color: #00265b;
   color: #f1df78;
-  font-size: calc(22 / 1920 * 100vw);
-
-  /* margin: 50% 0 0 0; */
+  font-size: 16px;
 
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -157,77 +132,62 @@
   text-align: center;
 }
 
-.middle-section.grid .small_circles {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-
-  width: calc(320 / 1920 * 100vw);
-  height: calc(320 / 1920 * 100vw);
-
-  position: relative;
-}
-
-.small_circles div a{
-  text-decoration: none;
-}
-
-/* cos(60deg)=0.5 sin(60deg)=0.866 */
-.outer_circle.grid .small_circles .sky {
+.outer_circle .sky {
   position: absolute;
-  top: calc((-320 * 0.866 - 50) / 1920 * 100vw);
-  left: calc((-320 * 0.5 - 50) / 1920 * 100vw);
+  top: 5px;
+  left: 20px;
 
-  color:#00265b;
+  color: #00265b;
 }
 
-.outer_circle.grid .small_circles .mountain {
+.outer_circle .mountain {
   position: absolute;
-  top: calc(-50 / 1920 * 100vw);
-  left: calc((-320 - 50) / 1920 * 100vw);
+  top: 115px;
+  left: -30px;
 
-  color:#00265b;
+  color: #00265b;
 }
 
-.outer_circle.grid .small_circles .ocean {
+.outer_circle .ocean {
   position: absolute;
-  top: calc((320 * 0.866 - 50) / 1920 * 100vw);
-  left: calc((-320 * 0.5 - 50) / 1920 * 100vw);
+  top: 225px;
+  left: 20px;
 
-  color:#00265b;
+  color: #00265b;
 }
 
-.outer_circle.grid .small_circles .star_top {
+.outer_circle .star_top {
   position: absolute;
-  top: calc((-320 * 0.866 - 50) / 1920 * 100vw);
-  left: calc((320 * 0.5 - 50) / 1920 * 100vw);
+  top: 5px;
+  left: 215px;
 
-  color:#00265b;
+  color: #00265b;
 }
 
-.outer_circle.grid .small_circles .moon {
+.outer_circle .moon {
   position: absolute;
-  top: calc(-50 / 1920 * 100vw);
-  left: calc((320 - 50) / 1920 * 100vw);
+  top: 115px;
+  left: 265px;
 
-  color:#00265b;
+  color: #00265b;
 }
 
-.outer_circle.grid .small_circles .star_bottom {
+.outer_circle .star_bottom {
   position: absolute;
-  top: calc((320 * 0.866 - 50) / 1920 * 100vw);
-  left: calc((320 * 0.5 - 50) / 1920 * 100vw);
+  top: 225px;
+  left: 215px;
 
-  color:#00265b;
+  color: #00265b;
 }
 
-.outer_circle.grid .small_circles .tickets {
-  width: calc(100 / 1920 * 100vw);
-  height: calc(100 / 1920 * 100vw);
+.outer_circle .tickets {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
 
   background-color: #f1df78;
   color: #00265b;
-  font-size: calc(20 / 1920 * 100vw);
+  font-size: 14px;
 
   display: flex;
   justify-content: center;
@@ -236,45 +196,35 @@
   z-index: 2;
 }
 
-.outer_circle.grid .small_circles .sky a,
-.outer_circle.grid .small_circles .mountain a,
-.outer_circle.grid .small_circles .ocean a {
+.outer_circle .sky a,
+.outer_circle .mountain a,
+.outer_circle .ocean a {
   color: #00265b;
 }
 
-.outer_circle.grid .small_circles .moon,
-.outer_circle.grid .small_circles .star {
+.outer_circle .moon,
+.outer_circle .star {
   background-color: #00265b;
 }
 
-.outer_circle.grid .small_circles .moon a,
-.outer_circle.grid .small_circles .star a {
+.outer_circle .moon a,
+.outer_circle .star a {
   color: #f1df78;
 }
 
 /* ticket info */
-.middle-section.grid .outer_circle.grid .ticket-info.grid {
-  grid-column: 1 / 3;
-  grid-row: 1 / 3;
-  justify-self: center;
-  align-self: center;
-
-  grid-template-rows: repeat(7, auto);
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-
-  width: calc(390 / 1920 * 100vw);
-  height: calc(390 / 1920 * 100vw);
+.outer_circle .ticket-info {
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
 
   background-color: white;
   color: #00265b;
-  font-size: calc(20 / 1920 * 100vw);
+  font-size: 16px;
 
-  position: relative;
+  position: absolute;
   top: 0;
-  left:calc(-390 / 1920 * 100vw - 50vw);
+  left: -300px;
 
   transition: bottom 1s;
 
@@ -282,91 +232,72 @@
 }
 
 #sky-info:target {
-  top: 0;
-  left: 0;
+  top: 30px;
+  left: 30px;
 }
 
 #mountain-info:target {
-  top: 0;
-  left: 0;
+  top: 30px;
+  left: 30px;
 }
 
 #ocean-info:target {
-  top: 0;
-  left: 0;
+  top: 30px;
+  left: 30px;
 }
 
 #star-info:target {
-  top: 0;
-  left: 0;
+  top: 30px;
+  left: 30px;
 }
 
 #moon-info:target {
-  top: 0;
-  left: 0;
+  top: 30px;
+  left: 30px;
 }
 
-.ticket-info.grid .btn-close {
-  width: calc(30 / 1920 * 100vw);
-  height: calc(30 / 1920 * 100vw);
-  /* border-radius: 50%; */
+.ticket-info .btn-close {
+  width: 18px;
+  height: 18px;
 
   text-decoration: none;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
-.ticket-info.grid .text-sky-table-price {
-  /* padding-top: calc(10 / 1920 * 100vw); */
+.ticket-info .text-sky-table-price {
+  padding-bottom: 20px;
 
-  font-size: calc(22 / 1920 * 100vw);
+  font-size: 16px;
   color: #e6a039;
 }
 
-.ticket-info.grid .text-benefits {
-  font-size: calc(18 / 1920 * 100vw);
+.ticket-info .text-benefits {
+  padding-bottom: 10px;
+
+  font-size: 14px;
 }
 
-.ticket-info.grid .text-more-info {
+.ticket-info .text-more-info {
+  padding-bottom: 10px;
+
   text-decoration: underline;
-  font-size: calc(16 / 1920 * 100vw);
+  font-size: 14px;
 }
 
-.ticket-info.grid .text-price{
-  font-size: calc(22 / 1920 * 100vw);
+.ticket-info .text-price {
+  padding-bottom: 10px;
+
+  font-size: 18px;
 }
 
-.ticket-info.grid .amount {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: calc(22 / 1920 * 100vw);
-}
-
-.ticket-info.grid .amount .btn-amount{
-  /* width: calc(20 / 1920 * 100vw);
-  height: calc(20 / 1920 * 100vw);
-  border: 1px solid #00265b; */
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.ticket-info.grid .amount .text-one {
-  margin-left: calc(10 / 1920 * 100vw);
-  margin-right: calc(10 / 1920 * 100vw);
-}
-
-.ticket-info.grid .btn-add {
-  width: calc(60 / 1920 * 100vw);
-  height: calc(60 / 1920 * 100vw);
+.ticket-info .btn-add {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 
-  font-size: calc(22 / 1920 * 100vw);
+  font-size: 16px;
   background-color: #e6a039;
   color: white;
   text-decoration: none;
@@ -379,249 +310,446 @@
 /*
    * --- FOOTER STYLES ---
    */
-   .border-top {
-    border-top: 1px solid #bcbec0 !important;
+.border-top {
+  border-top: 1px solid #bcbec0 !important;
+}
+
+#sdhs-logo {
+  width: 70%;
+}
+
+#info {
+  font-size: 14px;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+footer #info div a {
+  text-decoration: none;
+  color: #00265b;
+}
+
+#social-links {
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 5%;
+}
+
+#facebook,
+#twitter,
+#instagram {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.fa-facebook-square {
+  color: #dba24e;
+}
+
+.fa-twitter-square {
+  color: #f0ba3c;
+}
+
+.fa-instagram {
+  color: #e6a039;
+}
+
+/*
+     * ─── 768PX AND UP STYLES ────────────────────────────────────────────────────────
+     */
+@media screen and (min-width: 768px) {
+  #top-bar,
+  #middle-section,
+  footer {
+    padding-left: calc(140 / 1920 * 100vw);
+    padding-right: calc(140 / 1920 * 100vw);
   }
-  
-  #sdhs-logo {
-    width: 70%;
+  /*
+      ** --- NAVBAR STYLES ---
+      **/
+  #top-bar {
+    height: 12.6vh;
   }
-  
-  #info {
-    font-size: 14px;
-    flex-direction: column;
-    margin-top: 5%;
+
+  .title {
+    font-size: calc(36 / 1080 * 100vh);
+    letter-spacing: 0.5px;
   }
-  
-  footer #info div a {
+
+  .subtitle {
+    font-size: calc(24 / 1080 * 100vh);
+    letter-spacing: 1px;
+  }
+
+  #navbarToggler {
+    visibility: hidden;
+  }
+
+  #top-bar .navbar {
+    padding: 0;
+  }
+
+  #home-button {
+    padding: 0;
+  }
+
+  #home-button a {
     text-decoration: none;
     color: #00265b;
   }
-  
-  #social-links {
-    justify-content: center;
-    font-size: 30px;
-    margin-top: 5%;
+
+  #home-button a p {
+    width: calc(60 / 1920 * 100vw);
+    height: calc(60 / 1920 * 100vw);
+
+    border-radius: 50%;
+    border: 1px solid #00265b;
+
+    font-family: "Optima", sans-serif;
+    font-size: calc(16 / 1920 * 100vw);
+
+    visibility: visible;
   }
-  
-  #facebook,
-  #twitter,
-  #instagram {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  
-  .fa-facebook-square {
-    color: #dba24e;
-  }
-  
-  .fa-twitter-square {
-    color: #f0ba3c;
-  }
-  
-  .fa-instagram {
-    color: #e6a039;
-  }
-  
+
   /*
-     * ─── 768PX AND UP STYLES ────────────────────────────────────────────────────────
-     */
-  @media screen and (min-width: 768px) {
-    #top-bar,
-    #middle-section,
-    footer {
-      padding-left: calc(140 / 1920 * 100vw);
-      padding-right: calc(140 / 1920 * 100vw);
-    }
-    /*
-      ** --- NAVBAR STYLES ---
-      **/
-    #top-bar {
-      height: 12.6vh;
-    }
-  
-    .title {
-      font-size: calc(36 / 1080 * 100vh);
-      letter-spacing: 0.5px;
-    }
-  
-    .subtitle {
-      font-size: calc(24 / 1080 * 100vh);
-      letter-spacing: 1px;
-    }
-  
-    #navbarToggler {
-      visibility: hidden;
-    }
-  
-    #top-bar .navbar {
-      padding: 0;
-    }
-  
-    #home-button {
-      padding: 0;
-    }
-  
-    #home-button a {
-      text-decoration: none;
-      color: #00265b;
-    }
-  
-    #home-button a p {
-      width: calc(60 / 1920 * 100vw);
-      height: calc(60 / 1920 * 100vw);
-  
-      border-radius: 50%;
-      border: 1px solid #00265b;
-  
-      font-family: "Optima", sans-serif;
-      font-size: calc(16 / 1920 * 100vw);
-  
-      visibility: visible;
-    }
-  
-    /*
       ** --- MIDDLE-LEFT SECTION STYLES ---
       **/
-  
-    /* logo */
-    #logo {
-      position: fixed;
-      top: 40vh;
-      left: 0;
-  
-      padding-left: calc(140 / 1920 * 100vw);
-    }
-  
-    #logo a img {
-      width: calc(150 / 1080 * 100vh);
-    }
-  
-    #date {
-      position: relative;
-      font-size: calc(16 / 1920 * 100vw);
-    }
-  
-    /* 
+
+  /* logo */
+  #logo {
+    position: fixed;
+    top: 40vh;
+    left: 0;
+
+    padding-left: calc(140 / 1920 * 100vw);
+  }
+
+  #logo a img {
+    width: calc(150 / 1080 * 100vh);
+  }
+
+  #date {
+    position: relative;
+    font-size: calc(16 / 1920 * 100vw);
+  }
+
+  /* 
       ** --- MIDDLE-MIDDLE SECTION STYLES ---
       */
-    #middle-middle {
-      margin: calc(18 / 1920 * 100vw) 0;
-      padding: 0;
-  
-      font-size: calc(20 / 1920 * 100vw);
-      line-height: 1.4;
-      letter-spacing: calc(1 / 1920 * 100vw);
-    }
-  
-    .input-group-text {
-      margin-top: calc(10 / 1920 * 100vw);
-      font-size: calc(20 / 1920 * 100vw);
-    }
-  
-    .btn.btn-warning {
-      width: calc(100 / 1920 * 100vw);
-      height: calc(100 / 1920 * 100vw);
-  
-      font-size: calc(20 / 1920 * 100vw);
-    }
-  
-    .btn.btn-success {
-      background-color: #e6a039;
-      color: white;
-      border: none;
-      font-size: calc(22 / 1920 * 100vw);
-    }
-  
-    #text-appreciation {
-      font-size: calc(22 / 1920 * 100vw);
-    }
-  
-    #quote {
-      margin-top: calc(70 / 1920 * 100vw);
-  
-      display: flex;
-      justify-content: flex-end;
-  
-      font-size: calc(18 / 1920 * 100vw);
-    }
-  
-    /* 
+  #middle-middle {
+    margin: calc(18 / 1920 * 100vw) 0;
+    padding: 0;
+
+    font-size: calc(20 / 1920 * 100vw);
+    line-height: 1.4;
+    letter-spacing: calc(1 / 1920 * 100vw);
+  }
+
+  .outer_circle {
+    position: relative;
+    top: 0;
+    left: 240px;
+
+    width: calc(640 / 1920 * 100vw);
+    height: calc(640 / 1920 * 100vw);
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+
+  .left_half_circle {
+    position: absolute;
+    top: 160px;
+    left: 160px;
+
+    width: calc(160 / 1920 * 100vw);
+    height: calc(320 / 1920 * 100vw);
+    border-bottom-left-radius: calc(320 / 1920 * 100vw);
+    border-top-left-radius: calc(320 / 1920 * 100vw);
+
+    background-color: #f1df78;
+    color: #00265b;
+    font-size: calc(22 / 1920 * 100vw);
+
+    display: flex;
+    align-items: center;
+  }
+
+  .left_half_circle p {
+    text-align: center;
+  }
+
+  .right_half_circle {
+    position: absolute;
+    top: 160px;
+    left: 320px;
+
+    width: calc(160 / 1920 * 100vw);
+    height: calc(320 / 1920 * 100vw);
+    border-bottom-right-radius: calc(320 / 1920 * 100vw);
+    border-top-right-radius: calc(320 / 1920 * 100vw);
+
+    background-color: #00265b;
+    color: #f1df78;
+    font-size: calc(22 / 1920 * 100vw);
+
+    display: flex;
+    align-items: center;
+  }
+
+  .right_half_circle p {
+    text-align: center;
+  }
+
+  .outer_circle .sky {
+    position: absolute;
+    top: calc((60 * 0.5) / 1920 * 100vw);
+    left: calc((60 * 0.866) / 1920 * 100vw);
+
+    color: #00265b;
+  }
+
+  .outer_circle .mountain {
+    position: absolute;
+    top: calc(240 / 1920 * 100vw);
+    left: calc((-50) / 1920 * 100vw);
+
+    color: #00265b;
+  }
+
+  .outer_circle .ocean {
+    position: absolute;
+    top: calc((60 * 0.5 + 480) / 1920 * 100vw);
+    left: calc((60 * 0.866) / 1920 * 100vw);
+
+    color: #00265b;
+  }
+
+  .outer_circle .star_top {
+    position: absolute;
+    top: calc((60 * 0.5) / 1920 * 100vw);
+    left: calc((60 * 0.866 + 420) / 1920 * 100vw);
+
+    color: #00265b;
+  }
+
+  .outer_circle .moon {
+    position: absolute;
+    top: calc(240 / 1920 * 100vw);
+    left: calc(580 / 1920 * 100vw);
+
+    color: #00265b;
+  }
+
+  .outer_circle .star_bottom {
+    position: absolute;
+    top: calc((60 * 0.5 + 480) / 1920 * 100vw);
+    left: calc((60 * 0.866 + 420) / 1920 * 100vw);
+
+    color: #00265b;
+  }
+
+  .outer_circle .tickets {
+    width: calc(100 / 1920 * 100vw);
+    height: calc(100 / 1920 * 100vw);
+    border-radius: 50%;
+
+    background-color: #f1df78;
+    color: #00265b;
+    font-size: calc(20 / 1920 * 100vw);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+  }
+
+  .outer_circle .sky a,
+  .outer_circle .mountain a,
+  .outer_circle .ocean a {
+    color: #00265b;
+  }
+
+  .outer_circle .moon,
+  .outer_circle .star {
+    background-color: #00265b;
+  }
+
+  .outer_circle .moon a,
+  .outer_circle .star a {
+    color: #f1df78;
+  }
+
+  /* ticket info */
+  .outer_circle .ticket-info {
+    width: calc(390 / 1920 * 100vw);
+    height: calc(390 / 1920 * 100vw);
+    border-radius: 50%;
+
+    background-color: white;
+    color: #00265b;
+    font-size: calc(20 / 1920 * 100vw);
+
+    position: absolute;
+    top: 0;
+    left: calc(-390 / 1920 * 100vw - 50vw);
+
+    transition: bottom 1s;
+
+    z-index: 3;
+  }
+
+  #sky-info:target {
+    top: 125px;
+    left: 125px;
+  }
+
+  #mountain-info:target {
+    top: 125px;
+    left: 125px;
+  }
+
+  #ocean-info:target {
+    top: 125px;
+    left: 125px;
+  }
+
+  #star-info:target {
+    top: 125px;
+    left: 125px;
+  }
+
+  #moon-info:target {
+    top: 125px;
+    left: 125px;
+  }
+
+  .ticket-info .btn-close {
+    width: calc(30 / 1920 * 100vw);
+    height: calc(30 / 1920 * 100vw);
+
+    text-decoration: none;
+
+    padding-top: calc(10 / 1920 * 100vw);
+    padding-bottom: calc(60 / 1920 * 100vw);
+  }
+
+  .ticket-info .text-sky-table-price {
+    padding-bottom: calc(30 / 1920 * 100vw);
+
+    font-size: calc(22 / 1920 * 100vw);
+    color: #e6a039;
+  }
+
+  .ticket-info .text-benefits {
+    padding-bottom: calc(30 / 1920 * 100vw);
+
+    font-size: calc(18 / 1920 * 100vw);
+  }
+
+  .ticket-info .text-more-info {
+    padding-bottom: calc(30 / 1920 * 100vw);
+
+    text-decoration: underline;
+    font-size: calc(16 / 1920 * 100vw);
+  }
+
+  .ticket-info .text-price {
+    padding-bottom: calc(30 / 1920 * 100vw);
+
+    font-size: calc(22 / 1920 * 100vw);
+  }
+
+  .ticket-info .btn-add {
+    width: calc(60 / 1920 * 100vw);
+    height: calc(60 / 1920 * 100vw);
+    border-radius: 50%;
+
+    font-size: calc(22 / 1920 * 100vw);
+    background-color: #e6a039;
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 
       ** --- MIDDLE-RIGHT SECTION STYLES ---
       */
-    #middle-right {
-      padding: 0;
-      z-index: 3;
-    }
-  
-    #middle-right .col-12 {
-      padding: 0;
-    }
-  
-    #middle-section .btn-primary {
-      background-color: #fde7de;
-      color: #00265b;
-      border-color: #00265b;
-  
-      width: calc(100 / 1920 * 100vw);
-      height: calc(30 / 1920 * 100vw);
-      border-radius: calc(15 / 1920 * 100vw);
-      font-size: calc(14 / 1920 * 100vw);
-  
-      padding: 0;
-    }
-  
-    #middle-section .btn-primary:hover {
-      font-weight: bold;
-      border-radius: calc(15 / 1920 * 100vw);
-      border: 2px solid #00265b;
-    }
-  
-    #middle-section .page-name.card {
-      position: fixed;
-      top: calc(730 / 1080 * 100vh);
-  
-      background-color: #fde7de;
-      border: none;
-  
-      width: calc(150 / 1080 * 100vh);
-    }
-  
-    #middle-section .page-name.card p {
-      font-size: calc(22 / 1080 * 100vh);
-    }
-  
-    /*
+  #middle-right {
+    padding: 0;
+    z-index: 3;
+  }
+
+  #middle-right .col-12 {
+    padding: 0;
+  }
+
+  #middle-section .btn-primary {
+    background-color: #fde7de;
+    color: #00265b;
+    border-color: #00265b;
+
+    width: calc(100 / 1920 * 100vw);
+    height: calc(30 / 1920 * 100vw);
+    border-radius: calc(15 / 1920 * 100vw);
+    font-size: calc(14 / 1920 * 100vw);
+
+    padding: 0;
+  }
+
+  #middle-section .btn-primary:hover {
+    font-weight: bold;
+    border-radius: calc(15 / 1920 * 100vw);
+    border: 2px solid #00265b;
+  }
+
+  #middle-section .page-name.card {
+    position: fixed;
+    top: calc(730 / 1080 * 100vh);
+
+    background-color: #fde7de;
+    border: none;
+
+    width: calc(150 / 1080 * 100vh);
+  }
+
+  #middle-section .page-name.card p {
+    font-size: calc(22 / 1080 * 100vh);
+  }
+
+  /*
       ** --- FOOTER STYLES ---
       **/
-    #footer-logo {
-      padding: 0;
-    }
-  
-    #info {
-      flex-direction: row;
-      margin-top: 0;
-  
-      font-size: calc(16 / 1920 * 100vw);
-    }
-  
-    #sdhs-logo {
-      width: 90%;
-    }
-  
-    #social-links {
-      justify-content: flex-end;
-      margin-top: 0;
-    }
-  
-    #facebook,
-    #twitter {
-      margin-left: 7%;
-      margin-right: 7%;
-    }
-  
-    #instagram {
-      margin-left: 7%;
-    }
+  #footer-logo {
+    padding: 0;
   }
-  
+
+  #info {
+    flex-direction: row;
+    margin-top: 0;
+
+    font-size: calc(16 / 1920 * 100vw);
+  }
+
+  #sdhs-logo {
+    width: 90%;
+  }
+
+  #social-links {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  #facebook,
+  #twitter {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  #instagram {
+    margin-left: 7%;
+  }
+}
