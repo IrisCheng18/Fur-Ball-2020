@@ -5,104 +5,191 @@ html,
 body {
   height: 100vh;
   margin: 0;
-  padding: 0;
+
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Optima", sans-serif;
+  /* makes sure that the padding and border are included in the total width and height of the elements. */
+  box-sizing: border-box;
 
-  background-color: #FEECD3;
-  color: #00265b;
+  font-family: "Optima";
+  /* font-family: 'Cormorant Garamond', serif; */
+
+  background-color: #feecd3;
+
+  /* so as to make 1em=10px */
+  /* font-size: 62.5%; */
+  line-height: 1.2;
+}
+
+.container {
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+}
+
+.container.grid {
+  grid-template-rows: auto 1fr auto;
+  grid-gap: calc(36 / 1920 * 100vw);
 }
 
 /*
-   ** --- NAVBAR STYLES ---
-   **/
-#top-bar {
-  height: 15%;
-  z-index: 3;
+   * --- TOP SECTION STYLES ---
+   */
+.container .top.grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-left: calc(140 / 1920 * 100vw);
+  padding-right: calc(140 / 1920 * 100vw);
+
+  height: 12.6vh;
 
   font-family: "Cormorant Garamond", serif;
+  /* border: 1px solid red; */
 }
 
-.title {
-  font-size: 20px;
-  letter-spacing: 0.2px;
+.top.grid ul.grid {
+  grid-column: 1 / 13;
+  grid-row: 1 / 2;
+  justify-self: center;
+  align-self: center;
+  list-style: none;
+
+  grid-gap: calc(5 / 1080 * 100vh);
+
+  color: #00265b;
 }
 
-.subtitle {
-  font-size: 14px;
-  letter-spacing: 0.1px;
+.top.grid a {
+  grid-column: 12 /13;
+  grid-row: 1 / 2;
+  justify-self: end;
+  align-self: center;
+  text-decoration: none;
+  color: #00265b;
 }
 
-#home-button {
-  visibility: hidden;
-}
+.top.grid a p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-#btn-navbar {
-  position: absolute;
-  right: 0;
-
-  color: rgba(0, 0, 0, 0.5);
-
-  width: 35px;
-  height: 35px;
-
-  font-size: 14px;
+  width: calc(60 / 1920 * 100vw);
+  height: calc(60 / 1920 * 100vw);
 
   border-radius: 50%;
   border: 1px solid #00265b;
-  /* border-color:red; */
+
+  font-family: "Optima", sans-serif;
+  font-size: calc(16 / 1920 * 100vw);
 }
 
-/* 
-   ** --- MIDDLE-LEFT SECTION STYLES ---
-   */
-#logo a img {
-  width: 50%;
+.title {
+  font-size: calc(36 / 1080 * 100vh);
+  /* font-size: 3em; */
+  justify-self: center;
+  letter-spacing: 1px;
 }
 
-#date {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 14px;
-  color: black;
+.subtitle {
+  font-size: calc(24 / 1080 * 100vh);
+  /* font-size: 2em; */
+  /* font-family: "Optima"; */
+  justify-self: center;
+  letter-spacing: 1px;
 }
 
-/* 
-   ** --- MIDDLE-MIDDLE SECTION STYLES ---
-   */
-#middle-middle {
-  margin: 30px 15px;
-  line-height: 1.4;
-  letter-spacing: calc(0.5 / 1920 * 100vw);
+/*
+  * --- MIDDLE SECTION STYLES ---
+  */
+.container .middle.grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-left: calc(140 / 1920 * 100vw);
+  padding-right: calc(140 / 1920 * 100vw);
+  grid-gap: 1em;
+  height: 100%;
 }
 
-.outer_circle {
-  position: relative;
+/* --- MIDDLE - LEFT SECTION */
+.middle.grid .left-section.grid {
+  /* grid-column: 1 / 3;
+     justify-self: start;
+     align-self: center; */
+
+  position: fixed;
   top: 0;
-  left: 0;
 
-  width: 300px;
-  height: 300px;
+  grid-template-rows: 1fr auto 1fr;
+
+  height: 100%;
+  grid-gap: calc(12 / 1080 * 100vh);
+  font-family: "Open Sans Condensed";
+  font-size: calc(16 / 1080 * 100vh);
+  /* font-size: 1.6em; */
+  letter-spacing: 1px;
+}
+
+.left-section.grid a {
+  grid-row: 2 / 3;
+}
+
+.left-section.grid a img {
+  height: calc(189 / 1080 * 100vh);
+}
+
+.left-section.grid .date {
+  grid-row: 3 / 4;
+  justify-self: center;
+}
+
+.date p {
+  padding-bottom: calc(8 / 1080 * 100vh);
+}
+
+/* --- MIDDLE - MIDDLE SECTION */
+.middle.grid .middle-section.grid {
+  grid-column: 3 / 11;
+}
+
+.middle-section.grid .outer_circle {
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+
+  width: calc(640 / 1920 * 100vw);
+  height: calc(640 / 1920 * 100vw);
   border-radius: 50%;
   border: 1px solid black;
 }
 
-.left_half_circle {
-  position: absolute;
-  top: 50px;
-  left: 50px;
+.middle-section.grid .outer_circle.grid .left_section.grid {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
 
-  width: 100px;
-  height: 200px;
-  border-bottom-left-radius: 200px;
-  border-top-left-radius: 200px;
+  width: calc(320 / 1920 * 100vw);
+  height: calc(640 / 1920 * 100vw);
+}
+
+.outer_circle .left_section.grid .left_half_circle {
+  justify-self: end;
+  align-self: center;
+
+  width: calc(160 / 1920 * 100vw);
+  height: calc(320 / 1920 * 100vw);
+  border-bottom-left-radius: calc(320 / 1920 * 100vw);
+  border-top-left-radius: calc(320 / 1920 * 100vw);
 
   background-color: #f1df78;
   color: #00265b;
-  font-size: 16px;
+  font-size: calc(22 / 1920 * 100vw);
+
+  /* margin: 50% 0 0 50%; */
 
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -110,21 +197,31 @@ body {
   text-align: center;
 }
 
-.right_half_circle {
-  position: absolute;
-  top: 50px;
-  left: 150px;
+.middle-section.grid .outer_circle.grid .right_section.grid {
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
 
-  width: 100px;
-  height: 200px;
-  border-bottom-right-radius: 100px;
-  border-top-right-radius: 100px;
+  width: calc(320 / 1920 * 100vw);
+  height: calc(640 / 1920 * 100vw);
+}
+
+.outer_circle.grid .right_section.grid .right_half_circle {
+  justify-self: start;
+  align-self: center;
+
+  width: calc(160 / 1920 * 100vw);
+  height: calc(320 / 1920 * 100vw);
+  border-bottom-right-radius: calc(320 / 1920 * 100vw);
+  border-top-right-radius: calc(320 / 1920 * 100vw);
 
   background-color: #00265b;
   color: #f1df78;
-  font-size: 16px;
+  font-size: calc(22 / 1920 * 100vw);
+
+  /* margin: 50% 0 0 0; */
 
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -132,62 +229,77 @@ body {
   text-align: center;
 }
 
-.outer_circle .sky {
-  position: absolute;
-  top: 5px;
-  left: 20px;
+.middle-section.grid .small_circles {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 
-  color: #00265b;
+  width: calc(320 / 1920 * 100vw);
+  height: calc(320 / 1920 * 100vw);
+
+  position: relative;
 }
 
-.outer_circle .mountain {
-  position: absolute;
-  top: 115px;
-  left: -30px;
-
-  color: #00265b;
+.small_circles div a{
+  text-decoration: none;
 }
 
-.outer_circle .ocean {
+/* cos(60deg)=0.5 sin(60deg)=0.866 */
+.outer_circle.grid .small_circles .sky {
   position: absolute;
-  top: 225px;
-  left: 20px;
+  top: calc((-320 * 0.866 - 50) / 1920 * 100vw);
+  left: calc((-320 * 0.5 - 50) / 1920 * 100vw);
 
-  color: #00265b;
+  color:#00265b;
 }
 
-.outer_circle .star_top {
+.outer_circle.grid .small_circles .mountain {
   position: absolute;
-  top: 5px;
-  left: 215px;
+  top: calc(-50 / 1920 * 100vw);
+  left: calc((-320 - 50) / 1920 * 100vw);
 
-  color: #00265b;
+  color:#00265b;
 }
 
-.outer_circle .moon {
+.outer_circle.grid .small_circles .ocean {
   position: absolute;
-  top: 115px;
-  left: 265px;
+  top: calc((320 * 0.866 - 50) / 1920 * 100vw);
+  left: calc((-320 * 0.5 - 50) / 1920 * 100vw);
 
-  color: #00265b;
+  color:#00265b;
 }
 
-.outer_circle .star_bottom {
+.outer_circle.grid .small_circles .star_top {
   position: absolute;
-  top: 225px;
-  left: 215px;
+  top: calc((-320 * 0.866 - 50) / 1920 * 100vw);
+  left: calc((320 * 0.5 - 50) / 1920 * 100vw);
 
-  color: #00265b;
+  color:#00265b;
 }
 
-.outer_circle .tickets {
-  width: 60px;
-  height: 60px;
+.outer_circle.grid .small_circles .moon {
+  position: absolute;
+  top: calc(-50 / 1920 * 100vw);
+  left: calc((320 - 50) / 1920 * 100vw);
+
+  color:#00265b;
+}
+
+.outer_circle.grid .small_circles .star_bottom {
+  position: absolute;
+  top: calc((320 * 0.866 - 50) / 1920 * 100vw);
+  left: calc((320 * 0.5 - 50) / 1920 * 100vw);
+
+  color:#00265b;
+}
+
+.outer_circle.grid .small_circles .tickets {
+  width: calc(100 / 1920 * 100vw);
+  height: calc(100 / 1920 * 100vw);
   border-radius: 50%;
 
   background-color: #f1df78;
   color: #00265b;
-  font-size: 14px;
+  font-size: calc(20 / 1920 * 100vw);
 
   display: flex;
   justify-content: center;
@@ -196,35 +308,35 @@ body {
   z-index: 2;
 }
 
-.outer_circle .sky a,
-.outer_circle .mountain a,
-.outer_circle .ocean a {
-  color: #00265b;
-}
-
-.outer_circle .moon,
-.outer_circle .star {
+.outer_circle.grid .small_circles .moon,
+.outer_circle.grid .small_circles .star {
   background-color: #00265b;
-}
-
-.outer_circle .moon a,
-.outer_circle .star a {
   color: #f1df78;
 }
 
 /* ticket info */
-.outer_circle .ticket-info {
-  width: 240px;
-  height: 240px;
+.middle-section.grid .outer_circle.grid .ticket-info.grid {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  justify-self: center;
+  align-self: center;
+
+  grid-template-rows: repeat(7, auto);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+  width: calc(390 / 1920 * 100vw);
+  height: calc(390 / 1920 * 100vw);
   border-radius: 50%;
 
   background-color: white;
   color: #00265b;
-  font-size: 16px;
+  font-size: calc(20 / 1920 * 100vw);
 
-  position: absolute;
+  position: relative;
   top: 0;
-  left: -300px;
+  left:calc(-390 / 1920 * 100vw - 50vw);
 
   transition: bottom 1s;
 
@@ -232,72 +344,81 @@ body {
 }
 
 #sky-info:target {
-  top: 30px;
-  left: 30px;
+  top: 0;
+  left: 0;
 }
 
 #mountain-info:target {
-  top: 30px;
-  left: 30px;
+  top: 0;
+  left: 0;
 }
 
 #ocean-info:target {
-  top: 30px;
-  left: 30px;
+  top: 0;
+  left: 0;
 }
 
-#star-info:target {
-  top: 30px;
-  left: 30px;
-}
-
-#moon-info:target {
-  top: 30px;
-  left: 30px;
-}
-
-.ticket-info .btn-close {
-  width: 18px;
-  height: 18px;
+.ticket-info.grid .btn-close {
+  width: calc(30 / 1920 * 100vw);
+  height: calc(30 / 1920 * 100vw);
+  /* border-radius: 50%; */
 
   text-decoration: none;
 
-  padding-top: 10px;
-  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.ticket-info .text-sky-table-price {
-  padding-bottom: 20px;
+.ticket-info.grid .text-sky-table-price {
+  /* padding-top: calc(10 / 1920 * 100vw); */
 
-  font-size: 16px;
+  font-size: calc(22 / 1920 * 100vw);
   color: #e6a039;
 }
 
-.ticket-info .text-benefits {
-  padding-bottom: 10px;
-
-  font-size: 14px;
+.ticket-info.grid .text-benefits {
+  font-size: calc(18 / 1920 * 100vw);
 }
 
-.ticket-info .text-more-info {
-  padding-bottom: 10px;
-
+.ticket-info.grid .text-more-info {
   text-decoration: underline;
-  font-size: 14px;
+  font-size: calc(16 / 1920 * 100vw);
 }
 
-.ticket-info .text-price {
-  padding-bottom: 10px;
-
-  font-size: 18px;
+.ticket-info.grid .text-price{
+  font-size: calc(22 / 1920 * 100vw);
 }
 
-.ticket-info .btn-add {
-  width: 50px;
-  height: 50px;
+.ticket-info.grid .amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(22 / 1920 * 100vw);
+}
+
+.ticket-info.grid .amount .btn-amount{
+  /* width: calc(20 / 1920 * 100vw);
+  height: calc(20 / 1920 * 100vw);
+  border: 1px solid #00265b; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.ticket-info.grid .amount .text-one {
+  margin-left: calc(10 / 1920 * 100vw);
+  margin-right: calc(10 / 1920 * 100vw);
+}
+
+.ticket-info.grid .btn-add {
+  width: calc(60 / 1920 * 100vw);
+  height: calc(60 / 1920 * 100vw);
   border-radius: 50%;
 
-  font-size: 16px;
+  font-size: calc(22 / 1920 * 100vw);
   background-color: #e6a039;
   color: white;
   text-decoration: none;
@@ -307,449 +428,146 @@ body {
   align-items: center;
 }
 
-/*
-   * --- FOOTER STYLES ---
-   */
-.border-top {
-  border-top: 1px solid #bcbec0 !important;
+
+/* --- MIDDLE - RIGHT SECTION */
+.middle.grid .right-section {
+  grid-column: 11 / 13;
+
+  justify-self: end;
 }
 
-#sdhs-logo {
-  width: 70%;
+.right-section .menu.grid {
+  grid-template-rows: repeat(8, auto);
+  grid-gap: calc(8 / 1920 * 100vw);
+
+  justify-items: end;
+
+  position: sticky;
+  top: calc(16 / 1080 * 100vh);
 }
 
-#info {
-  font-size: 14px;
-  flex-direction: column;
-  margin-top: 5%;
+.right-section .menu.grid p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: calc(100 / 1920 * 100vw);
+  height: calc(30 / 1920 * 100vw);
+  border-radius: calc(30 / 1920 * 100vw);
+  border: 1px solid #00265b;
+
+  font-size: calc(14 / 1920 * 100vw);
 }
 
-footer #info div a {
+.right-section .menu.grid a {
   text-decoration: none;
   color: #00265b;
 }
 
-#social-links {
-  justify-content: center;
-  font-size: 30px;
-  margin-top: 5%;
+.right-section .menu.grid p:hover {
+  font-weight: bold;
+  border-radius: calc(15 / 1920 * 100vw);
+  border: 2px solid #00265b;
 }
 
-#facebook,
-#twitter,
-#instagram {
-  margin-left: 5%;
-  margin-right: 5%;
+.menu.grid .tickets p {
+  border-color: #bcbec0;
+  color: #bcbec0;
 }
 
-.fa-facebook-square {
-  color: #dba24e;
+.menu.grid .tickets p:hover {
+  cursor: not-allowed;
+  font-weight: normal;
+  border-color: #bcbec0;
+  border-radius: calc(15 / 1920 * 100vw);
+  border: 1px solid #bcbec0;
 }
 
-.fa-twitter-square {
-  color: #f0ba3c;
+.middle.grid .right-section .name_image {
+  position: sticky;
+  top: calc(845 / 1080 * 100vh);
+  /* margin-bottom: calc(30 / 1920 * 100vw); */
+
+  grid-gap: calc(24 / 1080 * 100vh);
 }
 
-.fa-instagram {
-  color: #e6a039;
+.right-section .name_image p {
+  text-align: center;
+
+  font-size: calc(25 / 1080 * 100vh);
+  letter-spacing: calc(1 / 1920 * 100vw);
+  color: #00265b;
+}
+
+.right-section img {
+  height: calc(150 / 1080 * 100vh);
+  justify-self: end;
 }
 
 /*
-     * ─── 768PX AND UP STYLES ────────────────────────────────────────────────────────
-     */
-@media screen and (min-width: 768px) {
-  #top-bar,
-  #middle-section,
-  footer {
-    padding-left: calc(140 / 1920 * 100vw);
-    padding-right: calc(140 / 1920 * 100vw);
-  }
-  /*
-      ** --- NAVBAR STYLES ---
-      **/
-  #top-bar {
-    height: 12.6vh;
-  }
-
-  .title {
-    font-size: calc(36 / 1080 * 100vh);
-    letter-spacing: 0.5px;
-  }
-
-  .subtitle {
-    font-size: calc(24 / 1080 * 100vh);
-    letter-spacing: 1px;
-  }
-
-  #navbarToggler {
-    visibility: hidden;
-  }
-
-  #top-bar .navbar {
-    padding: 0;
-  }
-
-  #home-button {
-    padding: 0;
-  }
-
-  #home-button a {
-    text-decoration: none;
-    color: #00265b;
-  }
-
-  #home-button a p {
-    width: calc(60 / 1920 * 100vw);
-    height: calc(60 / 1920 * 100vw);
-
-    border-radius: 50%;
-    border: 1px solid #00265b;
-
-    font-family: "Optima", sans-serif;
-    font-size: calc(16 / 1920 * 100vw);
-
-    visibility: visible;
-  }
-
-  /*
-      ** --- MIDDLE-LEFT SECTION STYLES ---
-      **/
-
-  /* logo */
-  #logo {
-    position: fixed;
-    top: 40vh;
-    left: 0;
-
-    padding-left: calc(140 / 1920 * 100vw);
-  }
-
-  #logo a img {
-    width: calc(150 / 1080 * 100vh);
-  }
-
-  #date {
-    position: relative;
-    font-size: calc(16 / 1920 * 100vw);
-  }
-
-  /* 
-      ** --- MIDDLE-MIDDLE SECTION STYLES ---
-      */
-  #middle-middle {
-    margin: calc(18 / 1920 * 100vw) 0;
-    padding: 0;
-
-    font-size: calc(20 / 1920 * 100vw);
-    line-height: 1.4;
-    letter-spacing: calc(1 / 1920 * 100vw);
-  }
-
-  .outer_circle {
-    position: relative;
-    top: 0;
-    left: 240px;
-
-    width: calc(640 / 1920 * 100vw);
-    height: calc(640 / 1920 * 100vw);
-    border-radius: 50%;
-    border: 1px solid black;
-  }
-
-  .left_half_circle {
-    position: absolute;
-    top: 160px;
-    left: 160px;
-
-    width: calc(160 / 1920 * 100vw);
-    height: calc(320 / 1920 * 100vw);
-    border-bottom-left-radius: calc(320 / 1920 * 100vw);
-    border-top-left-radius: calc(320 / 1920 * 100vw);
-
-    background-color: #f1df78;
-    color: #00265b;
-    font-size: calc(22 / 1920 * 100vw);
-
-    display: flex;
-    align-items: center;
-  }
-
-  .left_half_circle p {
-    text-align: center;
-  }
-
-  .right_half_circle {
-    position: absolute;
-    top: 160px;
-    left: 320px;
-
-    width: calc(160 / 1920 * 100vw);
-    height: calc(320 / 1920 * 100vw);
-    border-bottom-right-radius: calc(320 / 1920 * 100vw);
-    border-top-right-radius: calc(320 / 1920 * 100vw);
-
-    background-color: #00265b;
-    color: #f1df78;
-    font-size: calc(22 / 1920 * 100vw);
-
-    display: flex;
-    align-items: center;
-  }
-
-  .right_half_circle p {
-    text-align: center;
-  }
-
-  .outer_circle .sky {
-    position: absolute;
-    top: calc((60 * 0.5) / 1920 * 100vw);
-    left: calc((60 * 0.866) / 1920 * 100vw);
-
-    color: #00265b;
-  }
-
-  .outer_circle .mountain {
-    position: absolute;
-    top: calc(240 / 1920 * 100vw);
-    left: calc((-50) / 1920 * 100vw);
-
-    color: #00265b;
-  }
-
-  .outer_circle .ocean {
-    position: absolute;
-    top: calc((60 * 0.5 + 480) / 1920 * 100vw);
-    left: calc((60 * 0.866) / 1920 * 100vw);
-
-    color: #00265b;
-  }
-
-  .outer_circle .star_top {
-    position: absolute;
-    top: calc((60 * 0.5) / 1920 * 100vw);
-    left: calc((60 * 0.866 + 420) / 1920 * 100vw);
-
-    color: #00265b;
-  }
-
-  .outer_circle .moon {
-    position: absolute;
-    top: calc(240 / 1920 * 100vw);
-    left: calc(580 / 1920 * 100vw);
-
-    color: #00265b;
-  }
-
-  .outer_circle .star_bottom {
-    position: absolute;
-    top: calc((60 * 0.5 + 480) / 1920 * 100vw);
-    left: calc((60 * 0.866 + 420) / 1920 * 100vw);
-
-    color: #00265b;
-  }
-
-  .outer_circle .tickets {
-    width: calc(100 / 1920 * 100vw);
-    height: calc(100 / 1920 * 100vw);
-    border-radius: 50%;
-
-    background-color: #f1df78;
-    color: #00265b;
-    font-size: calc(20 / 1920 * 100vw);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    z-index: 2;
-  }
-
-  .outer_circle .sky a,
-  .outer_circle .mountain a,
-  .outer_circle .ocean a {
-    color: #00265b;
-  }
-
-  .outer_circle .moon,
-  .outer_circle .star {
-    background-color: #00265b;
-  }
-
-  .outer_circle .moon a,
-  .outer_circle .star a {
-    color: #f1df78;
-  }
-
-  /* ticket info */
-  .outer_circle .ticket-info {
-    width: calc(390 / 1920 * 100vw);
-    height: calc(390 / 1920 * 100vw);
-    border-radius: 50%;
-
-    background-color: white;
-    color: #00265b;
-    font-size: calc(20 / 1920 * 100vw);
-
-    position: absolute;
-    top: 0;
-    left: calc(-390 / 1920 * 100vw - 50vw);
-
-    transition: bottom 1s;
-
-    z-index: 3;
-  }
-
-  #sky-info:target {
-    top: 125px;
-    left: 125px;
-  }
-
-  #mountain-info:target {
-    top: 125px;
-    left: 125px;
-  }
-
-  #ocean-info:target {
-    top: 125px;
-    left: 125px;
-  }
-
-  #star-info:target {
-    top: 125px;
-    left: 125px;
-  }
-
-  #moon-info:target {
-    top: 125px;
-    left: 125px;
-  }
-
-  .ticket-info .btn-close {
-    width: calc(30 / 1920 * 100vw);
-    height: calc(30 / 1920 * 100vw);
-
-    text-decoration: none;
-
-    padding-top: calc(10 / 1920 * 100vw);
-    padding-bottom: calc(60 / 1920 * 100vw);
-  }
-
-  .ticket-info .text-sky-table-price {
-    padding-bottom: calc(30 / 1920 * 100vw);
-
-    font-size: calc(22 / 1920 * 100vw);
-    color: #e6a039;
-  }
-
-  .ticket-info .text-benefits {
-    padding-bottom: calc(30 / 1920 * 100vw);
-
-    font-size: calc(18 / 1920 * 100vw);
-  }
-
-  .ticket-info .text-more-info {
-    padding-bottom: calc(30 / 1920 * 100vw);
-
-    text-decoration: underline;
-    font-size: calc(16 / 1920 * 100vw);
-  }
-
-  .ticket-info .text-price {
-    padding-bottom: calc(30 / 1920 * 100vw);
-
-    font-size: calc(22 / 1920 * 100vw);
-  }
-
-  .ticket-info .btn-add {
-    width: calc(60 / 1920 * 100vw);
-    height: calc(60 / 1920 * 100vw);
-    border-radius: 50%;
-
-    font-size: calc(22 / 1920 * 100vw);
-    background-color: #e6a039;
-    color: white;
-    text-decoration: none;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* 
-      ** --- MIDDLE-RIGHT SECTION STYLES ---
-      */
-  #middle-right {
-    padding: 0;
-    z-index: 3;
-  }
-
-  #middle-right .col-12 {
-    padding: 0;
-  }
-
-  #middle-section .btn-primary {
-    background-color: #FEECD3;
-    color: #00265b;
-    border-color: #00265b;
-
-    width: calc(100 / 1920 * 100vw);
-    height: calc(30 / 1920 * 100vw);
-    border-radius: calc(15 / 1920 * 100vw);
-    font-size: calc(14 / 1920 * 100vw);
-
-    padding: 0;
-  }
-
-  #middle-section .btn-primary:hover {
-    font-weight: bold;
-    border-radius: calc(15 / 1920 * 100vw);
-    border: 2px solid #00265b;
-  }
-
-  #middle-section .page-name.card {
-    position: fixed;
-    top: calc(730 / 1080 * 100vh);
-
-    background-color: #FEECD3;
-    border: none;
-
-    width: calc(150 / 1080 * 100vh);
-  }
-
-  #middle-section .page-name.card p {
-    font-size: calc(22 / 1080 * 100vh);
-  }
-
-  /*
-      ** --- FOOTER STYLES ---
-      **/
-  #footer-logo {
-    padding: 0;
-  }
-
-  #info {
-    flex-direction: row;
-    margin-top: 0;
-
-    font-size: calc(16 / 1920 * 100vw);
-  }
-
-  #sdhs-logo {
-    width: 90%;
-  }
-
-  #social-links {
-    justify-content: flex-end;
-    margin-top: 0;
-  }
-
-  #facebook,
-  #twitter {
-    margin-left: 7%;
-    margin-right: 7%;
-  }
-
-  #instagram {
-    margin-left: 7%;
-  }
+  * --- FOOTER SECTION STYLES ---
+  */
+footer.grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  padding-top: calc(8 / 1080 * 100vh);
+  padding-left: calc(140 / 1920 * 100vw);
+  padding-right: calc(140 / 1920 * 100vw);
+
+  height: calc(100 / 1080 * 100vh);
+  border: 1px solid #bcbec0;
+
+  z-index: 2;
+}
+
+footer a {
+  grid-column: 1 / 3;
+}
+
+footer a img {
+  height: calc(94 / 1080 * 100vh);
+}
+
+footer .info {
+  grid-column: 3 / 11;
+  justify-self: center;
+  align-self: center;
+}
+
+footer .info li {
+  display: inline-block;
+  padding-left: calc(24 / 1920 * 100vw);
+
+  font-size: calc(16 / 1920 * 100vw);
+  /* font-size: 1.6em; */
+  color: #00265b;
+}
+
+footer .info li a {
+  text-decoration: none;
+  color: #00265b;
+}
+
+footer .info li a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer #social-links {
+  justify-self: end;
+  align-self: center;
+  grid-column: 11 / 13;
+}
+
+footer #social-links li {
+  display: inline-block;
+  padding-left: calc(47 / 1920 * 100vw);
+
+  font-size: calc(30 / 1920 * 100vw);
+}
+
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-instagram {
+  color: #dba24e;
 }
