@@ -343,6 +343,17 @@ body {
   z-index: 3;
 }
 
+.sky a,
+.mountain a,
+.ocean a {
+  color: #00265B;
+}
+
+.moon a,
+.star a {
+  color: #f1df78;
+}
+
 #sky-info:target {
   top: 0;
   left: 0;
@@ -354,6 +365,16 @@ body {
 }
 
 #ocean-info:target {
+  top: 0;
+  left: 0;
+}
+
+#moon-info:target {
+  top: 0;
+  left: 0;
+}
+
+#star-info:target {
   top: 0;
   left: 0;
 }
