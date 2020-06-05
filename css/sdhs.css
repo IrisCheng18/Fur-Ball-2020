@@ -218,6 +218,10 @@ ul.part2-text.values {
   margin-bottom: calc(10 / 1080 * 100vh);
 }
 
+.section .part3-text.grid a:hover {
+  font-weight: 700;
+}
+
 .section-title .section-text.part4 ul{
   padding-left: calc(20 / 1080 * 100vh);
   line-height: 1.4;
